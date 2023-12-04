@@ -1,0 +1,12 @@
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\bin\Debug\net6.0\Restaurant.BL.deps.json
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\bin\Debug\net6.0\Restaurant.BL.dll
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\bin\Debug\net6.0\Restaurant.BL.pdb
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\obj\Debug\net6.0\Restaurant.BL.csproj.AssemblyReference.cache
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\obj\Debug\net6.0\Restaurant.BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\obj\Debug\net6.0\Restaurant.BL.AssemblyInfoInputs.cache
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\obj\Debug\net6.0\Restaurant.BL.AssemblyInfo.cs
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\obj\Debug\net6.0\Restaurant.BL.csproj.CoreCompileInputs.cache
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\obj\Debug\net6.0\Restaurant.BL.dll
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\obj\Debug\net6.0\refint\Restaurant.BL.dll
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\obj\Debug\net6.0\Restaurant.BL.pdb
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\obj\Debug\net6.0\ref\Restaurant.BL.dll
