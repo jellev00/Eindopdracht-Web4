@@ -19,7 +19,7 @@ namespace EFDatalayerProvider
                 {
                     case RepositoryType.EFCore:
                         gebruikerRepo = new RepoGebruikerEF(connectionString);
-                        beheerderRepo = new RepoBeheerderEF(connectionString);
+                        beheerderRepo = new RepoRestaurantEF(connectionString);
                         reservatieRepo = new RepoReservatiesEF(connectionString);
                         break;
                     default: throw new EFDatalayerFactoryException("GetRepo");

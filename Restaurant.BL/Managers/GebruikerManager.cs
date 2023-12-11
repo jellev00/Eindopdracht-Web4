@@ -30,6 +30,31 @@ namespace Restaurant.BL.Managers
                 throw new GebruikerManagerException("GetGebruikers", ex);
             }
         }
+
+        public Gebruiker GetGebruikersByKlantNr(int klantNr)
+        {
+            try
+            {
+                return _gebruikerRepo.GetGebruikersByKlantNr(klantNr);
+            }
+            catch (Exception ex)
+            {
+                throw new GebruikerManagerException("GetGebruikers", ex);
+            }
+        }
+
+        public Gebruiker GetGebruikersByEmail(string email)
+        {
+            try
+            {
+                return _gebruikerRepo.GetGebruikersByEmail(email);
+            }
+            catch (Exception ex)
+            {
+                throw new GebruikerManagerException("GetGebruikers", ex);
+            }
+        }
+
         public void AddGebruiker(Gebruiker gebruiker)
         {
             try

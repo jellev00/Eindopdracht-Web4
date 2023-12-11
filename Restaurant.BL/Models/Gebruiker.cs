@@ -11,7 +11,11 @@ namespace Restaurant.BL.Models
 {
     public class Gebruiker
     {
-        public Gebruiker(string naam, string email, int telefoonNr, Locatie locatie)
+        public Gebruiker()
+        {
+        }
+
+        public Gebruiker(string naam, string email, string telefoonNr, Locatie locatie)
         {
             _naam = naam;
             _email = email;
@@ -19,13 +23,13 @@ namespace Restaurant.BL.Models
             _locatie = locatie;
         }
 
-        public Gebruiker(string naam, string email, int telefoonNr, Locatie locatie, int klantenNr)
+        public Gebruiker(int klantenNr, string naam, string email, string telefoonNr, Locatie locatie)
         {
+            _klantenNr = klantenNr;
             _naam = naam;
             _email = email;
             _telefoonNr = telefoonNr;
             _locatie = locatie;
-            _klantenNr = klantenNr;
         }
 
         private string _naam;
@@ -68,8 +72,8 @@ namespace Restaurant.BL.Models
             }
         }
 
-        private int _telefoonNr;
-        public int TelefoonNr
+        private string _telefoonNr;
+        public string TelefoonNr
         {
             get
             {
@@ -77,7 +81,7 @@ namespace Restaurant.BL.Models
             }
             set
             {
-                if (IsNumeric(value))
+                if (!string.IsNullOrWhiteSpace(value))
                 {
                     _telefoonNr = value;
                 }
@@ -126,12 +130,6 @@ namespace Restaurant.BL.Models
                     _klantenNr = value;
                 }
             }
-        }
-
-        // Hulp methode om te kijken of het numers zijn
-        private bool IsNumeric(int value)
-        {
-            return value >= 0;
         }
     }
 }

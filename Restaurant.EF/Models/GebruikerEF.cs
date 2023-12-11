@@ -15,7 +15,7 @@ namespace Restaurant.EF.Models
             // Default constructor
         }
 
-        public GebruikerEF(string naam, string email, int telefoonNummer, string postcode, string gemeenteNaam, string straatNaam, string huisNummerLabel)
+        public GebruikerEF(string naam, string email, string telefoonNummer, string postcode, string gemeenteNaam, string straatNaam, string huisNummerLabel)
         {
             Naam = naam;
             Email = email;
@@ -26,7 +26,7 @@ namespace Restaurant.EF.Models
             HuisNummerLabel = huisNummerLabel;
         }
 
-        public GebruikerEF(int klantenNummer, string naam, string email, int telefoonNummer, string postcode, string gemeenteNaam, string straatNaam, string huisNummerLabel)
+        public GebruikerEF(int klantenNummer, string naam, string email, string telefoonNummer, string postcode, string gemeenteNaam, string straatNaam, string huisNummerLabel)
         {
             KlantenNummer = klantenNummer;
             Naam = naam;
@@ -51,7 +51,8 @@ namespace Restaurant.EF.Models
         public string Email { get; set; }
 
         [Required]
-        public int TelefoonNummer { get; set; }
+        [Column(TypeName = "varchar(30)")]
+        public string TelefoonNummer { get; set; }
 
         // Locatie
         [Required]
@@ -67,5 +68,7 @@ namespace Restaurant.EF.Models
 
         [Column(TypeName = "varchar(50)")]
         public string HuisNummerLabel { get; set; }
+
+        public List<ReservatiesEF> Reservaties { get; set; } = new List<ReservatiesEF>();
     }
 }

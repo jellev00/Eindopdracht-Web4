@@ -1,4 +1,4 @@
-﻿using Restaurant.BL.Exceptions;
+﻿ using Restaurant.BL.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +9,11 @@ namespace Restaurant.BL.Models
 {
     public class Reservatie
     {
+
+        public Reservatie()
+        {
+
+        }
         public Reservatie(Restaurant restaurantInfo, Gebruiker gebruiker, int aantalPlaatsen, DateTime datum, TimeSpan uur, int tafelNr)
         {
             _restaurantInfo = restaurantInfo;

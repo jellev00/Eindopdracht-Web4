@@ -56,5 +56,7 @@ namespace Restaurant.EF.Models
 
         [Required]
         public string Email { get; set; }
+
+        public List<ReservatiesEF> Reservaties { get; set; } = new List<ReservatiesEF>();
     }
 }

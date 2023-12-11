@@ -17,31 +17,32 @@ namespace Restaurant.BL.Managers
         {
             _reservatieRepo = reservatieRepo;
         }
-        public List<Reservatie> GetReservaties(string filterPostcode, string filterKeuken, int filterAantalPlaatsen)
+
+        public List<Reservatie> GetReservatiesByDateAndRestaurantNaam(DateTime Datum, string RestaurantNaam)
         {
             try
             {
-                List<Reservatie> allReservaties = _reservatieRepo.GetReservaties("", "", 0);
+                List<Reservatie> reservaties = _reservatieRepo.GetReservatiesByDateAndRestaurantNaam(Datum, RestaurantNaam);
 
-                List<Reservatie> filteredReservaties = new List<Reservatie>();
-
-                foreach (var reservatie in allReservaties)
-                {
-                    bool postcodeMatch = string.IsNullOrEmpty(filterPostcode) || reservatie.Gebruiker.Locatie.Postcode.ToString() == filterPostcode;
-                    bool keukenMatch = string.IsNullOrEmpty(filterKeuken) || reservatie.Gebruiker.Locatie.Straatnaam == filterKeuken;
-                    bool plaatsenMatch = filterAantalPlaatsen <= reservatie.AantalPlaatsen;
-
-                    if (postcodeMatch && keukenMatch && plaatsenMatch)
-                    {
-                        filteredReservaties.Add(reservatie);
-                    }
-                }
-
-                return filteredReservaties;
+                return reservaties;
             }
             catch (Exception ex)
             {
-                throw new ReservatieManagerException("GetReservaties - Fout bij ophalen en filteren van reservaties.", ex);
+                throw new ReservatieManagerException("GetReservatiesByDateAndRestaurantNaam", ex);
+            }
+        }
+
+        public List<Reservatie> GetReservatiesByDateRange(DateTime Datum)
+        {
+            try
+            {
+                List<Reservatie> reservaties = _reservatieRepo.GetReservatiesByDateRange(Datum);
+
+                return reservaties;
+            }
+            catch (Exception ex)
+            {
+                throw new ReservatieManagerException("GetReservatiesByDateRange", ex);
             }
         }
 
@@ -61,9 +62,9 @@ namespace Restaurant.BL.Managers
         {
             try
             {
-                if (!_reservatieRepo.ReservatiesExists(reservatie.ReservatieNr))
+                if (!_reservatieRepo.ReservatieExists(reservatie.ReservatieNr))
                 {
-                    _reservatieRepo.AddReservaties(reservatie);
+                    _reservatieRepo.AddReservatie(reservatie);
                 }
                 else
                 {
@@ -80,9 +81,9 @@ namespace Restaurant.BL.Managers
         {
             try
             {
-                if (_reservatieRepo.ReservatiesExists(reservatie.ReservatieNr))
+                if (_reservatieRepo.ReservatieExists(reservatie.ReservatieNr))
                 {
-                    _reservatieRepo.DeleteReservaties(reservatie);
+                    _reservatieRepo.CancelReservatie(reservatie);
                 }
                 else
                 {
@@ -99,7 +100,7 @@ namespace Restaurant.BL.Managers
         {
             try
             {
-                _reservatieRepo.UpdateReservaties(reservatie);
+                _reservatieRepo.UpdateReservatie(reservatie);
             }
             catch (Exception ex)
             {
@@ -111,7 +112,7 @@ namespace Restaurant.BL.Managers
         {
             try
             {
-                return _reservatieRepo.ReservatiesExists(reservatieNr);
+                return _reservatieRepo.ReservatieExists(reservatieNr);
             }
             catch (Exception ex)
             {

@@ -144,7 +144,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Hogent\\Semester_3\\Web_4\\EindOpdracht\\Eindopdracht-Web4\\Restaurant.BL\\Restaurant.BL.csproj": {
+                "projectPath": "D:\\Hogent\\Semester_3\\Web_4\\EindOpdracht\\Eindopdracht-Web4\\Restaurant.BL\\Restaurant.BL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -156,6 +160,18 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.25, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

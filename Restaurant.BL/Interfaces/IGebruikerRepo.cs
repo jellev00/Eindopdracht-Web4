@@ -10,7 +10,11 @@ namespace Restaurant.BL.Interfaces
     public interface IGebruikerRepo
     {
         List<Gebruiker> GetGebruikers();
-        void AddGebruiker(Gebruiker gebruiker);
+        Gebruiker GetGebruikersByKlantNr(int klantNr);
+        Gebruiker GetGebruikersByEmail(string email);
+
+
+        Gebruiker AddGebruiker(Gebruiker gebruiker);
         void DeleteGebruiker(Gebruiker gebruiker);
         void UpdateGebruiker(Gebruiker gebruiker);
         bool GebruikerExists(string email);

@@ -9,14 +9,11 @@ namespace Restaurant.BL.Models
 {
     public class Restaurant
     {
-        //public Beheerder(string naam, Locatie locatie, string keuken, Contactgegevens contactgegevens)
-        //{
-        //    _naam = naam;
-        //    _locatie = locatie;
-        //    _keuken = keuken;
-        //    _contactgegevens = contactgegevens;
-        //}
 
+        public Restaurant()
+        {
+
+        }
         public Restaurant(string naam, Locatie locatie, string keuken, Contactgegevens contactgegevens)
         {
             _naam = naam;
