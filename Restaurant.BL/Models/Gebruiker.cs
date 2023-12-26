@@ -14,7 +14,7 @@ namespace Restaurant.BL.Models
         public Gebruiker()
         {
         }
-
+        
         public Gebruiker(string naam, string email, string telefoonNr, Locatie locatie)
         {
             _naam = naam;
@@ -30,6 +30,31 @@ namespace Restaurant.BL.Models
             _email = email;
             _telefoonNr = telefoonNr;
             _locatie = locatie;
+        }
+
+        public Gebruiker(int klantenNr,  string naam, string email, string telefoonNr, Locatie locatie, List<Reservatie> reservatie) : this(klantenNr, naam, email, telefoonNr, locatie)
+        {
+            _reservatie = reservatie;
+        }
+
+        private int _klantenNr;
+        public int KlantenNr
+        {
+            get
+            {
+                return _klantenNr;
+            }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new GebruikerException("KlantenNr is niet geldig!");
+                }
+                else
+                {
+                    _klantenNr = value;
+                }
+            }
         }
 
         private string _naam;
@@ -61,6 +86,10 @@ namespace Restaurant.BL.Models
             }
             set
             {
+                if (value == "string")
+                {
+                    _email = value;
+                }
                 if ((string.IsNullOrWhiteSpace(value)) || (!value.Contains('@')))
                 {
                     throw new GebruikerException("Email is niet geldig!");
@@ -81,7 +110,11 @@ namespace Restaurant.BL.Models
             }
             set
             {
-                if (!string.IsNullOrWhiteSpace(value))
+                if (value == "string")
+                {
+                    _telefoonNr = value;
+                }
+                if (!string.IsNullOrWhiteSpace(value) && System.Text.RegularExpressions.Regex.IsMatch(value, @"^\d+$"))
                 {
                     _telefoonNr = value;
                 }
@@ -112,22 +145,22 @@ namespace Restaurant.BL.Models
             }
         }
 
-        private int _klantenNr;
-        public int KlantenNr
+        private List<Reservatie> _reservatie;
+        public List<Reservatie> Reservatie
         {
             get
             {
-                return _klantenNr;
+                return _reservatie;
             }
             set
             {
-                if (value <= 0)
+                if (value == null)
                 {
-                    throw new GebruikerException("KlantenNr is niet geldig!");
+                    throw new GebruikerException("Reservatie kan niet null zijn");
                 }
                 else
                 {
-                    _klantenNr = value;
+                    _reservatie = value;
                 }
             }
         }

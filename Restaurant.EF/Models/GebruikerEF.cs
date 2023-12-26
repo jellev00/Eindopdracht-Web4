@@ -38,6 +38,11 @@ namespace Restaurant.EF.Models
             HuisNummerLabel = huisNummerLabel;
         }
 
+        public GebruikerEF(int klantenNummer, string naam, string email, string telefoonNummer, string postcode, string gemeenteNaam, string straatNaam, string huisNummerLabel, List<ReservatiesEF> reservaties) : this(klantenNummer, naam, email, telefoonNummer, postcode, gemeenteNaam, straatNaam, huisNummerLabel)
+        {
+            Reservaties = reservaties;
+        }
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int KlantenNummer { get; set; }

@@ -19,6 +19,7 @@ namespace Restaurant.EF.Models
         public DbSet<GebruikerEF> Gebruiker { get; set; }
         public DbSet<ReservatiesEF> Reservatie { get; set; }
         public DbSet<RestaurantEF> Restaurant { get; set; }
+        public DbSet<TafelsEF> Tafels { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -27,13 +28,13 @@ namespace Restaurant.EF.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<GebruikerEF>()
-                .HasMany(g => g.Reservaties)
-                .WithOne(r => r.Gebruiker);
+            //modelBuilder.Entity<GebruikerEF>()
+            //    .HasMany(g => g.Reservaties)
+            //    .WithOne(r => r.Gebruiker);
 
-            modelBuilder.Entity<RestaurantEF>()
-                .HasMany(r => r.Reservaties)
-                .WithOne(r => r.Restaurant);
+            //modelBuilder.Entity<RestaurantEF>()
+            //    .HasMany(r => r.Reservaties)
+            //    .WithOne(r => r.Restaurant);
         }
     }
 }

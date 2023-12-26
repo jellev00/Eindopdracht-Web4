@@ -12,18 +12,25 @@ namespace Restaurant.EF.Mappers
 {
     public class MapReservatiesEF
     {
-        public static Reservatie MapToDomain(ReservatiesEF db)
+        public static List<Reservatie> MapToDomain(List<ReservatiesEF> dbList)
         {
             try
             {
-                Contactgegevens contactgegevens = new Contactgegevens(db.Restaurant.TelefoonNummer, db.Restaurant.Email);
-                Locatie locatieRestaurant = new Locatie(db.Restaurant.Postcode, db.Restaurant.GemeenteNaam, db.Restaurant.StraatNaam, db.Restaurant.HuisNummerLabel);
-                BL.Models.Restaurant restaurant = new BL.Models.Restaurant(db.Restaurant.Naam, locatieRestaurant, db.Restaurant.Keuken, contactgegevens);
+                List<Reservatie> reservaties = new List<Reservatie>();
 
-                Locatie locatieGebruiker = new Locatie(db.Gebruiker.Postcode, db.Gebruiker.GemeenteNaam, db.Gebruiker.StraatNaam, db.Gebruiker.HuisNummerLabel);
-                Gebruiker gebruiker = new Gebruiker(db.Gebruiker.KlantenNummer, db.Gebruiker.Naam, db.Gebruiker.Email, db.Gebruiker.TelefoonNummer, locatieGebruiker);
+                foreach (var db in dbList)
+                {
+                    Contactgegevens contactgegevens = new Contactgegevens(db.Restaurant.TelefoonNummer, db.Restaurant.Email);
+                    Locatie locatieRestaurant = new Locatie(db.Restaurant.Postcode, db.Restaurant.GemeenteNaam, db.Restaurant.StraatNaam, db.Restaurant.HuisNummerLabel);
+                    BL.Models.Restaurant restaurant = new BL.Models.Restaurant(db.Restaurant.Id, db.Restaurant.Naam, locatieRestaurant, db.Restaurant.Keuken, contactgegevens, db.Restaurant.Status);
 
-                return new Reservatie(db.ReservatieNummer, restaurant, gebruiker, db.AantalPlaatsen, db.Datum, db.Uur, db.TafelNummer);
+                    Locatie locatieGebruiker = new Locatie(db.Gebruiker.Postcode, db.Gebruiker.GemeenteNaam, db.Gebruiker.StraatNaam, db.Gebruiker.HuisNummerLabel);
+                    Gebruiker gebruiker = new Gebruiker(db.Gebruiker.KlantenNummer, db.Gebruiker.Naam, db.Gebruiker.Email, db.Gebruiker.TelefoonNummer, locatieGebruiker);
+
+                    reservaties.Add(new Reservatie(db.ReservatieNummer, restaurant, gebruiker, db.AantalPlaatsen, db.DatumUur, db.TafelNummer));
+                }
+
+                return reservaties;
             }
             catch (Exception ex)
             {
@@ -31,23 +38,45 @@ namespace Restaurant.EF.Mappers
             }
         }
 
-        public static ReservatiesEF MapToDB(Reservatie r, RestaurantContext ctx)
+        public static Reservatie MapToDomain(ReservatiesEF db)
+        {
+            return MapToDomain(new List<ReservatiesEF> { db }).FirstOrDefault();
+        }
+
+        public static ReservatiesEF MapToDB(int klantenNr, int restaurantId, int ReservatieNr, Reservatie r, RestaurantContext ctx)
         {
             try
             {
-                RestaurantEF restaurant = ctx.Restaurant.Find(r.RestaurantInfo.Naam);
-                GebruikerEF gebruiker = ctx.Gebruiker.Find(r.Gebruiker.KlantenNr);
+                ReservatiesEF reservatie = ctx.Reservatie.Find(ReservatieNr);
+                RestaurantEF restaurant = ctx.Restaurant.Find(restaurantId);
+                GebruikerEF gebruiker = ctx.Gebruiker.Find(klantenNr);
 
                 if (restaurant == null)
                 {
-                    restaurant = MapRestaurantEF.MapToDB(r.RestaurantInfo, ctx);
+                    throw new MapperException($"Restaurant met naam {r.RestaurantInfo.Naam} bestaat niet!");
                 }
                 if (gebruiker == null)
                 {
-                    gebruiker = MapGebruikerEF.MapToDB(r.Gebruiker, ctx);
+                    throw new MapperException($"Gebruiker met klantenNummer {r.Gebruiker.KlantenNr} bestaat niet!");
                 }
 
-                return new ReservatiesEF(r.ReservatieNr, restaurant, gebruiker, r.AantalPlaatsen, r.Datum, r.Uur, r.TafelNr);
+                if (reservatie == null)
+                {
+                    reservatie = new ReservatiesEF(restaurant, gebruiker, r.AantalPlaatsen, r.DatumUur, r.TafelNr);
+                }
+                else
+                {
+                    if (r.DatumUur != null)
+                    {
+                        reservatie.DatumUur = r.DatumUur;
+                    }
+                    if (r.AantalPlaatsen != null)
+                    {
+                        reservatie.AantalPlaatsen = r.AantalPlaatsen;
+                    }
+                }
+
+                return reservatie;
             }
             catch (Exception ex)
             {

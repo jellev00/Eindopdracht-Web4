@@ -9,14 +9,14 @@ namespace Restaurant.BL.Models
 {
     public class Contactgegevens
     {
-        public Contactgegevens(int telefoonNr, string email)
+        public Contactgegevens(string telefoonNr, string email)
         {
             _telefoonNr = telefoonNr;
             _email = email;
         }
 
-        private int _telefoonNr;
-        public int TelefoonNr
+        private string _telefoonNr;
+        public string TelefoonNr
         {
             get
             {
@@ -24,7 +24,11 @@ namespace Restaurant.BL.Models
             }
             set
             {
-                if (IsNumeric(value))
+                if (value == "string")
+                {
+                    _telefoonNr = value;
+                }
+                if (!string.IsNullOrWhiteSpace(value) && System.Text.RegularExpressions.Regex.IsMatch(value, @"^\d+$"))
                 {
                     _telefoonNr = value;
                 }
@@ -44,6 +48,10 @@ namespace Restaurant.BL.Models
             }
             set
             {
+                if (value == "string")
+                {
+                    _email = value;
+                }
                 if ((string.IsNullOrWhiteSpace(value)) || (!value.Contains('@')))
                 {
                     throw new ContactgegevensException("Email is niet geldig!");

@@ -1940,6 +1940,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Restaurant.BL >= 1.0.0",
       "Restaurant.EF >= 1.0.0"
     ]
   },
@@ -1970,6 +1971,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\Hogent\\Semester_3\\Web_4\\EindOpdracht\\Eindopdracht-Web4\\Restaurant.BL\\Restaurant.BL.csproj": {
+              "projectPath": "D:\\Hogent\\Semester_3\\Web_4\\EindOpdracht\\Eindopdracht-Web4\\Restaurant.BL\\Restaurant.BL.csproj"
+            },
             "D:\\Hogent\\Semester_3\\Web_4\\EindOpdracht\\Eindopdracht-Web4\\Restaurant.EF\\Restaurant.EF.csproj": {
               "projectPath": "D:\\Hogent\\Semester_3\\Web_4\\EindOpdracht\\Eindopdracht-Web4\\Restaurant.EF\\Restaurant.EF.csproj"
             }

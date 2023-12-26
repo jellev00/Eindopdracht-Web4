@@ -19,83 +19,33 @@ namespace Restaurant.BL.Managers
             _gebruikerRepo = gebruikerRepo;
         }
 
-        public List<Gebruiker> GetGebruikers()
+        public Gebruiker AddGebruiker(Gebruiker gebruiker)
         {
             try
             {
-                return _gebruikerRepo.GetGebruikers();
-            }
-            catch (Exception ex)
-            {
-                throw new GebruikerManagerException("GetGebruikers", ex);
-            }
-        }
-
-        public Gebruiker GetGebruikersByKlantNr(int klantNr)
-        {
-            try
-            {
-                return _gebruikerRepo.GetGebruikersByKlantNr(klantNr);
-            }
-            catch (Exception ex)
-            {
-                throw new GebruikerManagerException("GetGebruikers", ex);
-            }
-        }
-
-        public Gebruiker GetGebruikersByEmail(string email)
-        {
-            try
-            {
-                return _gebruikerRepo.GetGebruikersByEmail(email);
-            }
-            catch (Exception ex)
-            {
-                throw new GebruikerManagerException("GetGebruikers", ex);
-            }
-        }
-
-        public void AddGebruiker(Gebruiker gebruiker)
-        {
-            try
-            {
-                if (!_gebruikerRepo.GebruikerExists(gebruiker.Email))
+                if (gebruiker == null)
                 {
-                    _gebruikerRepo.AddGebruiker(gebruiker);
+                    throw new GebruikerManagerException($"AddGebruiker - De gebruiker mag niet null zijn!");
                 }
-                else
+
+                if (_gebruikerRepo.ExistsGebruiker(gebruiker.Email))
                 {
-                    throw new GebruikerManagerException($"AddGebruiker - De gebruiker bestaat al");
+                    throw new GebruikerManagerException($"AddGebruiker - De gebruiker bestaat al!");
                 }
+
+                return _gebruikerRepo.AddGebruiker(gebruiker);
             }
             catch (Exception ex)
             {
                 throw new GebruikerManagerException("AddGebruiker", ex);
             }
         }
-        public void DeleteGebruiker(Gebruiker gebruiker)
+
+        public void UpdateGebruiker(int klantenNr, Gebruiker gebruiker)
         {
             try
             {
-                if (_gebruikerRepo.GebruikerExists(gebruiker.Email))
-                {
-                    _gebruikerRepo.DeleteGebruiker(gebruiker);
-                }
-                else
-                {
-                    throw new GebruikerManagerException($"DeleteGebruiker - De gebruiker bestaat niet");
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new GebruikerManagerException("DeleteGebruiker", ex);
-            }
-        }
-        public void UpdateGebruiker(Gebruiker gebruiker)
-        {
-            try
-            {
-                _gebruikerRepo.UpdateGebruiker(gebruiker);
+                _gebruikerRepo.UpdateGebruiker(klantenNr, gebruiker);
             }
             catch (Exception ex)
             {
@@ -103,11 +53,45 @@ namespace Restaurant.BL.Managers
             }
         }
 
-        public bool GebruikerExists(string email)
+        public void DeleteGebruiker(string email)
         {
             try
             {
-                return _gebruikerRepo.GebruikerExists(email);
+                if (!_gebruikerRepo.ExistsGebruiker(email))
+                {
+                    throw new GebruikerManagerException($"DeleteGebruiker - De gebruiker bestaat niet");
+                }
+
+                _gebruikerRepo.DeleteGebruiker(email);
+            }
+            catch (Exception ex)
+            {
+                throw new GebruikerManagerException("DeleteGebruiker", ex);
+            }
+        }
+
+        public Gebruiker GetGebruikerByEmail(string email)
+        {
+            try
+            {
+                if (!_gebruikerRepo.ExistsGebruiker(email))
+                {
+                    throw new GebruikerManagerException($"GetGebruikerByEmail - De gebruiker bestaat niet");
+                }
+
+                return _gebruikerRepo.GetGebruikerByEmail(email);
+            }
+            catch (Exception ex)
+            {
+                throw new GebruikerManagerException("GetGebruikerByEmail", ex);
+            }
+        }
+
+        public bool ExistsGebruiker(string email)
+        {
+            try
+            {
+                return _gebruikerRepo.ExistsGebruiker(email);
             }
             catch (Exception ex)
             {

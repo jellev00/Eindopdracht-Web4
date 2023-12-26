@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "TestEF/1.0.0": {
         "dependencies": {
+          "Restaurant.BL": "1.0.0",
           "Restaurant.EF": "1.0.0"
         },
         "runtime": {

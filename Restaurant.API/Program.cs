@@ -14,6 +14,10 @@ namespace Restaurant.API
             // Add services to the container.
             builder.Services.AddSingleton<IGebruikerRepo>(r => new RepoGebruikerEF(connectionString));
             builder.Services.AddSingleton<GebruikerManager>();
+            builder.Services.AddSingleton<IReservatieRepo>(r => new RepoReservatiesEF(connectionString));
+            builder.Services.AddSingleton<ReservatieManager>();
+            builder.Services.AddSingleton<IRestaurantRepo>(r => new RepoRestaurantEF(connectionString));
+            builder.Services.AddSingleton<RestaurantManager>();
 
 
             builder.Services.AddControllers();

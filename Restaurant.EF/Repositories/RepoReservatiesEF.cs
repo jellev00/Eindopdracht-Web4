@@ -27,14 +27,50 @@ namespace Restaurant.EF.Repositories
             ctx.ChangeTracker.Clear();
         }
 
-        public Reservatie AddReservatie(Reservatie reservatie)
+        public Reservatie AddReservatie(int klantenNr, int restaurantId, Reservatie reservatie)
         {
             try
             {
-                ReservatiesEF reservatiesEF = MapReservatiesEF.MapToDB(reservatie, ctx);
-                ctx.Reservatie.Add(reservatiesEF);
-                SaveAndClear();
-                return reservatie;
+                GebruikerEF gEF = ctx.Gebruiker.Find(klantenNr);
+                //RestaurantEF rEF = ctx.Restaurant.Find(restaurantId);
+                RestaurantEF rEF = ctx.Restaurant.Where(x => x.Id == restaurantId).Include(x => x.Tafels).SingleOrDefault();
+
+                if (gEF == null)
+                {
+                    throw new RepositoryException($"Gebruiker met ID {klantenNr} is niet gevonden!");
+                }
+
+                if (gEF.Reservaties == null)
+                {
+                    gEF.Reservaties = new List<ReservatiesEF>();
+                }
+
+                // Iterate through available tables and find a suitable one
+                foreach (TafelsEF tafel in rEF.Tafels.OrderBy(t => t.AantalPlaatsen))
+                {
+                    // Check if the table is available at the specified time
+                    if (!IsTableOccupied(tafel.Id, reservatie.DatumUur, reservatie.DatumUur.AddHours(1.5)))
+                    {
+                        // Check if the table has enough seats
+                        if (tafel.AantalPlaatsen >= reservatie.AantalPlaatsen)
+                        {
+                            // Create a new reservation
+                            Reservatie r = new Reservatie(reservatie.AantalPlaatsen, reservatie.DatumUur, tafel.Id);
+                            ReservatiesEF newReservatieEF = MapReservatiesEF.MapToDB(klantenNr, restaurantId, 0, r, ctx);
+
+                            // Add the new reservation to the user and restaurant
+                            gEF.Reservaties.Add(newReservatieEF);
+                            rEF.Reservaties.Add(newReservatieEF);
+
+                            SaveAndClear();
+
+                            return reservatie;
+                        }
+                    }
+                }
+
+                // If no suitable table is found, throw an exception or handle accordingly
+                throw new Exception("No suitable table found for the reservation.");
             }
             catch (Exception ex)
             {
@@ -42,60 +78,30 @@ namespace Restaurant.EF.Repositories
             }
         }
 
-        public void CancelReservatie(Reservatie reservatie)
+        // Check if a table is occupied during the specified time period
+        private bool IsTableOccupied(int tafelNr, DateTime start, DateTime end)
         {
-            try
-            {
-                ctx.Reservatie.Remove(new ReservatiesEF() { ReservatieNummer = reservatie.ReservatieNr });
-                SaveAndClear();
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("CancelReservatie", ex);
-            }
+            return ctx.Reservatie.Any(r =>
+                r.TafelNummer == tafelNr &&
+                r.DatumUur < end &&
+                r.DatumUur.AddHours(1.5) > start);
         }
 
-        public List<Reservatie> GetReservatiesByDateRange(DateTime Datum)
+        public void UpdateReservatie(int klantenNr, int restaurantId, int reservatieNr, Reservatie reservatie)
         {
             try
             {
-                return ctx.Reservatie.Where(x => x.Datum == Datum).Select(x => MapReservatiesEF.MapToDomain(x)).ToList();
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("GetReservatiesByDate", ex);
-            }
-        }
+                ReservatiesEF rEF = ctx.Reservatie.Find(reservatieNr);
 
-        public List<Reservatie> GetReservatiesGebruiker(int klantenNr)
-        {
-            try
-            {
-                return ctx.Reservatie.Where(x => x.Gebruiker.KlantenNummer == klantenNr).Select(x => MapReservatiesEF.MapToDomain(x)).ToList();
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("GetReservatiesGebruiker", ex);
-            }
-        }
+                if (rEF == null)
+                {
+                    throw new RepositoryException($"Reservatie met ReservatieNummer{reservatieNr} is niet gevonden!");
+                }
+                else
+                {
+                    rEF = MapReservatiesEF.MapToDB(klantenNr, restaurantId, reservatieNr, reservatie, ctx);
+                }
 
-        public bool ReservatieExists(int reservatieNr)
-        {
-            try
-            {
-                return ctx.Reservatie.Any(x => x.ReservatieNummer == reservatieNr);
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("ReservatieExists", ex);
-            }
-        }
-
-        public void UpdateReservatie(Reservatie reservatie)
-        {
-            try
-            {
-                ctx.Reservatie.Update(MapReservatiesEF.MapToDB(reservatie, ctx));
                 SaveAndClear();
             }
             catch (Exception ex)
@@ -104,15 +110,132 @@ namespace Restaurant.EF.Repositories
             }
         }
 
-        public List<Reservatie> GetReservatiesByDateAndRestaurantNaam(DateTime Datum, string RestaurantNaam)
+        public void DeleteReservatie(int klantenNr, int reservatieNr)
         {
             try
             {
-                return ctx.Reservatie.Where(x => x.Datum == Datum).Where(x => x.Restaurant.Naam == RestaurantNaam).Select(x => MapReservatiesEF.MapToDomain(x)).ToList();
+                var reservatieToDelete = ctx.Reservatie.SingleOrDefault(x => x.ReservatieNummer == reservatieNr && x.Gebruiker.KlantenNummer == klantenNr);
+
+                if (reservatieToDelete != null)
+                {
+                    if (reservatieToDelete.DatumUur.Date > DateTime.Today)
+                    {
+                        ctx.Reservatie.Remove(reservatieToDelete);
+                        SaveAndClear();
+                    }
+                    else
+                    {
+                        throw new RepositoryException("De reservatie kan niet worden verwijderd omdat de datum vandaag is of in het verleden ligt.");
+                    }
+                }
             }
             catch (Exception ex)
             {
-                throw new RepositoryException("GetReservatiesByDateAndRestaurantNaam", ex);
+                throw new RepositoryException("DeleteGebruiker", ex);
+            }
+        }
+
+        public List<Reservatie> GetAllReservationsByKlantenNr(int klantenNr, DateTime? beginDatum, DateTime? eindDatum)
+        {
+            try
+            {
+                IQueryable<ReservatiesEF> query = ctx.Reservatie.Where(r => r.Gebruiker.KlantenNummer == klantenNr);
+
+                if (beginDatum.HasValue)
+                {
+                    if (eindDatum.HasValue)
+                    {
+                        query = query.Where(x => x.DatumUur.Date >= beginDatum && x.DatumUur.Date <= eindDatum);
+                    }
+                    else
+                    {
+                        query = query.Where(x => x.DatumUur.Date == beginDatum);
+                    }
+                }
+
+                List<Reservatie> reservaties = MapReservatiesEF.MapToDomain(
+                    query.Include(r => r.Gebruiker)
+                    .Include(r => r.Restaurant)
+                    .AsNoTracking()
+                    .ToList()
+                );
+
+                return reservaties;
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("GetAllReservationsByKlantenNr", ex);
+            }
+        }
+
+        public Reservatie GetReservationsByReservatieNr(int reservatieNr)
+        {
+            try
+            {
+                var reservation = ctx.Reservatie
+                    .Include(r => r.Gebruiker)
+                    .Include(r => r.Restaurant)
+                    .Where(r => r.ReservatieNummer == reservatieNr)
+                    .AsNoTracking()
+                    .FirstOrDefault();
+
+                if (reservation != null)
+                {
+                    Reservatie mappedReservation = MapReservatiesEF.MapToDomain(reservation);
+                    return mappedReservation;
+                }
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("GetAllReservations", ex);
+            }
+        }
+
+        public List<Reservatie> GetAllReservationsByRestauranNaam(string restauranNaam, DateTime? beginDatum, DateTime? eindDatum)
+        {
+            try
+            {
+                IQueryable<ReservatiesEF> query = ctx.Reservatie.Where(r => r.Restaurant.Naam == restauranNaam);
+
+                if (beginDatum.HasValue)
+                {
+                    if (eindDatum.HasValue)
+                    {
+                        query = query.Where(x => x.DatumUur.Date >= beginDatum && x.DatumUur.Date <= eindDatum);
+                    }
+                    else
+                    {
+                        query = query.Where(x => x.DatumUur.Date == beginDatum);
+                    }
+                }
+
+                List<Reservatie> reservaties = MapReservatiesEF.MapToDomain(
+                    query.Include(r => r.Gebruiker)
+                    .Include(r => r.Restaurant)
+                    .AsNoTracking()
+                    .ToList()
+                );
+
+                return reservaties;
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("GetAllReservationsByRestauranNaam", ex);
+            }
+        }
+
+        public bool ExistsResertvatie(int reservatieNr)
+        {
+            try
+            {
+                return ctx.Reservatie.Any(x => x.ReservatieNummer == reservatieNr);
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("ExistsResertvatie", ex);
             }
         }
     }

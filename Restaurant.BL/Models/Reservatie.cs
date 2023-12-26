@@ -14,25 +14,43 @@ namespace Restaurant.BL.Models
         {
 
         }
-        public Reservatie(Restaurant restaurantInfo, Gebruiker gebruiker, int aantalPlaatsen, DateTime datum, TimeSpan uur, int tafelNr)
+        public Reservatie(Restaurant restaurantInfo, Gebruiker gebruiker, int aantalPlaatsen, DateTime datumUur, int tafelNr)
         {
             _restaurantInfo = restaurantInfo;
             _gebruiker = gebruiker;
             _aantalPlaatsen = aantalPlaatsen;
-            _datum = datum;
-            _uur = uur;
+            _datumUur = datumUur;
             _tafelNr = tafelNr;
         }
 
-        public Reservatie(int reservatieNr, Restaurant restaurantInfo, Gebruiker gebruiker, int aantalPlaatsen, DateTime datum, TimeSpan uur, int tafelNr)
+        public Reservatie(int reservatieNr, Restaurant restaurantInfo, Gebruiker gebruiker, int aantalPlaatsen, DateTime datumUur, int tafelNr)
         {
             _reservatieNr = reservatieNr;
             _restaurantInfo = restaurantInfo;
             _gebruiker = gebruiker;
             _aantalPlaatsen = aantalPlaatsen;
-            _datum = datum;
-            _uur = uur;
+            _datumUur = datumUur;
             _tafelNr = tafelNr;
+        }
+
+        public Reservatie(int aantalPlaatsen, DateTime datumUur)
+        {
+            _aantalPlaatsen = aantalPlaatsen;
+            _datumUur = datumUur;
+        }
+
+        public Reservatie(int aantalPlaatsen, DateTime datumUur, int tafelNr)
+        {
+            _aantalPlaatsen = aantalPlaatsen;
+            _datumUur = datumUur;
+            _tafelNr = tafelNr;
+        }
+
+        public Reservatie(int reservatieNr, int aantalPlaatsen, DateTime datumUur)
+        {
+            _reservatieNr = reservatieNr;
+            _aantalPlaatsen = aantalPlaatsen;
+            _datumUur = datumUur;
         }
 
         private int _reservatieNr;
@@ -105,43 +123,38 @@ namespace Restaurant.BL.Models
             }
         }
 
-        private DateTime _datum;
-        public DateTime Datum
+        private DateTime _datumUur;
+
+        public DateTime DatumUur
         {
             get
             {
-                return _datum;
+                return _datumUur;
             }
             set
             {
-                if (value.Date < DateTime.Today)
-                {
-                    throw new ReservatieException("Datum moet vandaag of in de toekomst zijn.");
-                }
-
-                _datum = value;
-            }
-        }
-
-        private TimeSpan _uur;
-        public TimeSpan Uur
-        {
-            get
-            {
-                return _uur;
-            }
-            set
-            {
-                DateTime combinedDateTime = _datum.Add(value);
-
-                if (combinedDateTime < DateTime.Now)
+                if (value < DateTime.Now)
                 {
                     throw new ReservatieException("De combinatie van Datum en Uur mag niet in het verleden zijn.");
                 }
 
-                _uur = value;
+                DateTime opening = DateTime.Today.Add(new TimeSpan(10, 0, 0));
+                DateTime sluiting = DateTime.Today.Add(new TimeSpan(23, 0, 0));
+
+                if (value.TimeOfDay < opening.TimeOfDay || value.TimeOfDay > sluiting.TimeOfDay)
+                {
+                    throw new ReservatieException($"De combinatie van Datum en Uur moet tussen {opening.TimeOfDay} en {sluiting.TimeOfDay} liggen.");
+                }
+
+                _datumUur = value;
             }
         }
+
+        public void EindUur()
+        {
+            DatumUur.AddHours(1).AddMinutes(30);
+        }
+            
 
         private int _tafelNr;
         public int TafelNr

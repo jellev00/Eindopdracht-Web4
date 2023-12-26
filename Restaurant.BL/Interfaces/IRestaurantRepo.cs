@@ -9,21 +9,25 @@ namespace Restaurant.BL.Interfaces
 {
     public interface IRestaurantRepo
     {
-        List<Models.Restaurant> GetRestaurants();
         Models.Restaurant AddRestaurant(Models.Restaurant restaurant);
-        bool RestaurantExists(string naam);
-        void DeleteRestaurant(Models.Restaurant restaurant);
-        void UpdateRestaurant(Models.Restaurant restaurant);
+        void UpdateRestaurant(int Id, Models.Restaurant restaurant);
+        void DeleteRestaurant(string naam);
+        List<Models.Restaurant> GetAllRestaurants();
+        Models.Restaurant GetRestaurantByNaam(string naam);
+        bool ExistsRestaurant(string naam);
 
         // Additional methods for searching restaurants
-        List<Models.Restaurant> SearchRestaurantsByPostcode(string postcode);
-        List<Models.Restaurant> SearchRestaurantsByKeuken(string keuken);
-        List<Models.Restaurant> SearchRestaurantsByLocationAndKeuken(string postcode, string keuken);
+        List<Models.Restaurant> SearchRestaurants(string postcode, string keuken);
+        List<Models.Restaurant> GetAvailableRestaurants(DateTime datum, int aantalplaatsen);
 
-        // Method for getting an overview of available tables for a specific date
-        List<Models.Restaurant> GetAvailableTables(DateTime datum, int aantalPlaatsen);
 
-        // Additional method for getting an overview with location and cuisine filters
-        List<Models.Restaurant> GetAvailableTables(DateTime datum, int aantalPlaatsen, string postcode, string keuken);
+        // Tafel
+
+        Tafel AddTafel(int restaurantId, Tafel tafel);
+        Tafel GetTafel(int Id);
+        List<Tafel> GetTafels(int restaurantId);
+        void UpdateTafel(int restaurantId, int Id, Tafel tafel);
+        void DeleteTafel(int restaurantId, int Id);
+        bool ExistsTafel(int Id);
     }
 }

@@ -9,12 +9,13 @@ namespace Restaurant.BL.Interfaces
 {
     public interface IReservatieRepo
     {
-        List<Reservatie> GetReservatiesByDateAndRestaurantNaam(DateTime Datum, string RestaurantNaam);
-        List<Reservatie> GetReservatiesByDateRange(DateTime Datum);
-        List<Reservatie> GetReservatiesGebruiker(int klantenNr);
-        Reservatie AddReservatie(Reservatie reservatie);
-        void CancelReservatie(Reservatie reservatie);
-        void UpdateReservatie(Reservatie reservatie);
-        bool ReservatieExists(int reservatieNr);
+        Reservatie AddReservatie(int klantenNr, int restaurantId, Reservatie reservatie);
+        void UpdateReservatie(int klantenNr, int restaurantId, int reservatieNr, Reservatie reservatie);
+        void DeleteReservatie(int klantenNr, int reservatieNr);
+        List<Reservatie> GetAllReservationsByKlantenNr(int klantenNr, DateTime? beginDatum, DateTime? eindDatum);
+        Reservatie GetReservationsByReservatieNr(int reservatieNr);
+        List<Reservatie> GetAllReservationsByRestauranNaam(string restauranNaam, DateTime? beginDatum, DateTime? eindDatum);
+        bool ExistsResertvatie(int reservatieNr);
+
     }
 }

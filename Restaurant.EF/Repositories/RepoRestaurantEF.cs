@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Restaurant.BL.Exceptions;
 using Restaurant.BL.Interfaces;
 using Restaurant.BL.Models;
 using Restaurant.EF.Exceptions;
@@ -7,6 +8,7 @@ using Restaurant.EF.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -31,109 +33,31 @@ namespace Restaurant.EF.Repositories
         {
             try
             {
-                RestaurantEF restaurantEF = MapRestaurantEF.MapToDB(restaurant, ctx);
-                ctx.Restaurant.Add(restaurantEF);
+                ctx.Restaurant.Add(MapRestaurantEF.MapToDB(0, restaurant, ctx));
                 SaveAndClear();
                 return restaurant;
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw new RepositoryException("AddRestaurant", ex);
             }
         }
 
-        // Kijken hoe deze lijsten moet worden opgehaald.
-
-        public List<BL.Models.Restaurant> GetAvailableTables(DateTime datum, int aantalPlaatsen)
+        public void DeleteRestaurant(string naam)
         {
             try
             {
-                throw new NotImplementedException();
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("GetAvailableTables", ex);
-            }
-        }
+                var restaurantToDelete = ctx.Restaurant.FirstOrDefault(x => x.Naam == naam);
 
-        public List<BL.Models.Restaurant> GetAvailableTables(DateTime datum, int aantalPlaatsen, string postcode, string keuken)
-        {
-            try
-            {
-                throw new NotImplementedException();
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("GetAvailableTables", ex);
-            }
-        }
-
-        public List<BL.Models.Restaurant> GetRestaurants()
-        {
-            try
-            {
-                return ctx.Restaurant.Select(x => MapRestaurantEF.MapToDomain(x)).AsNoTracking().ToList();
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("GetRestaurants", ex);
-            }
-        }
-
-        public bool RestaurantExists(string naam)
-        {
-            try
-            {
-                return ctx.Restaurant.Any(x => x.Naam == naam);
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("RestaurantExists", ex);
-            }
-        }
-
-        public List<BL.Models.Restaurant> SearchRestaurantsByKeuken(string keuken)
-        {
-            try
-            {
-                return ctx.Restaurant.Where(x => x.Keuken == keuken).Select(x => MapRestaurantEF.MapToDomain(x)).ToList();
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("SearchRestaurantsByKeuken", ex);
-            }
-        }
-
-        public List<BL.Models.Restaurant> SearchRestaurantsByLocationAndKeuken(string postcode, string keuken)
-        {
-            try
-            {
-                return ctx.Restaurant.Where(x => x.Keuken == keuken).Where(x => x.Postcode == postcode).Select(x => MapRestaurantEF.MapToDomain(x)).ToList();
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("SearchRestaurantsByLocationAndKeuken", ex);
-            }
-        }
-
-        public List<BL.Models.Restaurant> SearchRestaurantsByPostcode(string postcode)
-        {
-            try
-            {
-                return ctx.Restaurant.Where(x => x.Postcode == postcode).Select(x => MapRestaurantEF.MapToDomain(x)).ToList();
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("SearchRestaurantsByPostcode", ex);
-            }
-        }
-
-        public void DeleteRestaurant(BL.Models.Restaurant restaurant)
-        {
-            try
-            {
-                ctx.Restaurant.Remove(new RestaurantEF() { Naam = restaurant.Naam });
-                SaveAndClear();
-
+                if (restaurantToDelete != null)
+                {
+                    restaurantToDelete.Status = false;
+                    SaveAndClear();
+                }
+                else
+                {
+                    throw new RepositoryException($"Restaurant with name {naam} not found");
+                }
             }
             catch (Exception ex)
             {
@@ -141,16 +65,275 @@ namespace Restaurant.EF.Repositories
             }
         }
 
-        public void UpdateRestaurant(BL.Models.Restaurant restaurant)
+        public bool ExistsRestaurant(string naam)
         {
             try
             {
-                ctx.Restaurant.Update(MapRestaurantEF.MapToDB(restaurant, ctx));
-                SaveAndClear();
+                return ctx.Restaurant.Any(x => x.Naam == naam);
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("ExistsRestaurant", ex);
+            }
+        }
+
+        public List<BL.Models.Restaurant> GetAllRestaurants()
+        {
+            try
+            {
+                List<RestaurantEF> restaurantEntities = ctx.Restaurant
+                    .Where(x => x.Status == true)
+                    .Include(x => x.Tafels)
+                    .Include(x => x.Reservaties)
+                    .ThenInclude(x => x.Gebruiker)
+                    .AsNoTracking()
+                    .ToList();
+
+                return MapRestaurantEF.MapToDomain(restaurantEntities);
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("GetAllRestaurants", ex);
+            }
+        }
+
+        public List<BL.Models.Restaurant> GetAvailableRestaurants(DateTime Datum, int aantalplaatsen)
+        {
+            try
+            {
+                var beschikbareRestaurants = ctx.Restaurant
+                    .Where(r => r.Status == true)
+                    .Include(x => x.Tafels)
+                    .Include(x => x.Reservaties)
+                    .ThenInclude(x => x.Gebruiker)
+                    .AsNoTracking()
+                    .ToList();
+
+                // Filter restaurants based on availability
+                var filteredRestaurants = beschikbareRestaurants
+                    .Where(r =>
+                        r.Tafels.Any(t =>
+                            !IsTableOccupied(t.Id, Datum, Datum.AddHours(1.5)) &&
+                            t.AantalPlaatsen >= aantalplaatsen))
+                    .ToList();
+
+                return MapRestaurantEF.MapToDomain(filteredRestaurants);
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("GetAvailableRestaurants", ex);
+            }
+        }
+
+        // Check if a table is occupied during the specified time period
+        private bool IsTableOccupied(int tafelNr, DateTime start, DateTime end)
+        {
+            return ctx.Reservatie.Any(r =>
+                r.TafelNummer == tafelNr &&
+                r.DatumUur < end &&
+                r.DatumUur.AddHours(1.5) > start);
+        }
+
+        public BL.Models.Restaurant GetRestaurantByNaam(string naam)
+        {
+            try
+            {
+                RestaurantEF restaurantEF = ctx.Restaurant.Where(x => x.Status == true && x.Naam == naam).Include(x => x.Tafels).Include(x => x.Reservaties).ThenInclude(x => x.Gebruiker).AsNoTracking().FirstOrDefault();
+
+                if (restaurantEF == null)
+                {
+                    throw new RepositoryException($"GetRestaurantByNaam - Restaurant met naam {naam} bestaat niet");
+                }
+
+                return MapRestaurantEF.MapToDomain(restaurantEF);
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("GetRestaurantByNaam", ex);
+            }
+        }
+
+        public List<BL.Models.Restaurant> SearchRestaurants(string postcode, string keuken)
+        {
+            try
+            {
+                // Start with all restaurants
+                IQueryable<RestaurantEF> query = ctx.Restaurant.Where(x => x.Status == true);
+
+                // Apply filters based on user input
+                if (!string.IsNullOrEmpty(postcode))
+                {
+                    query = query.Where(x => x.Postcode == postcode);
+                }
+
+                if (!string.IsNullOrEmpty(keuken))
+                {
+                    query = query.Where(x => x.Keuken == keuken);
+                }
+
+                // Execute the query and map the results to domain models
+                List<BL.Models.Restaurant> restaurants = MapRestaurantEF.MapToDomain(
+                    query.Include(x => x.Tafels)
+                        .Include(x => x.Reservaties)
+                        .ThenInclude(x => x.Gebruiker)
+                        .AsNoTracking()
+                        .ToList()
+                );
+
+                // Check if there are restaurants with the specified criteria
+                if (restaurants == null || restaurants.Count == 0)
+                {
+                    throw new RestaurantManagerException("No restaurants found with the specified criteria.");
+                }
+
+                return restaurants;
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("SearchRestaurants", ex);
+            }
+        }
+
+
+        public void UpdateRestaurant(int Id, BL.Models.Restaurant restaurant)
+        {
+            try
+            {
+                RestaurantEF rEF = ctx.Restaurant.Find(Id);
+
+                if (rEF == null)
+                {
+                    throw new RepositoryException($"Restaurant met ID {Id} is niet gevonden!");
+                }
+                else
+                {
+                    rEF = MapRestaurantEF.MapToDB(Id, restaurant, ctx);
+                }
+
+
             }
             catch (Exception ex)
             {
                 throw new RepositoryException("UpdateRestaurant", ex);
+            }
+        }
+
+
+        // Tafel
+
+        public Tafel AddTafel(int restaurantId, Tafel tafel)
+        {
+            try
+            {
+                RestaurantEF rEF = ctx.Restaurant.Find(restaurantId);
+
+                if (rEF == null)
+                {
+                    throw new RepositoryException($"Restaurant met ID {restaurantId} bestaat niet!");
+                }
+
+                TafelsEF tafelsEF = MapTafelEF.MapToDB(restaurantId, tafel.Id, tafel, ctx);
+
+                rEF.Tafels.Add(tafelsEF);
+
+                SaveAndClear();
+
+                return tafel;
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("AddTafel", ex);
+            }
+        }
+
+        public Tafel GetTafel(int Id)
+        {
+            try
+            {
+                var tafels = ctx.Tafels
+                    .Where(t => t.Id == Id)
+                    .Include(x => x.Restaurant)
+                    .Select(t => MapTafelEF.MapToDomain(t))
+                    .AsNoTracking()
+                    .FirstOrDefault();
+
+                return tafels;
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("GetTafel", ex);
+            }
+        }
+
+        public List<Tafel> GetTafels(int restaurantId)
+        {
+            try
+            {
+                var tafels = ctx.Tafels
+                    .Where(t => t.Restaurant.Id == restaurantId)
+                    .Include(x => x.Restaurant)
+                    .Select(t => MapTafelEF.MapToDomain(t))
+                    .ToList();
+
+                return tafels;
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("GetTafels", ex);
+            }
+        }
+
+        public void UpdateTafel(int restaurantId, int Id, Tafel tafel)
+        {
+            try
+            {
+                TafelsEF tEF = ctx.Tafels.Find(Id);
+
+                if (tEF == null)
+                {
+                    throw new RepositoryException($"Tafel met ID {Id} bestaat niet!");
+                }
+                else
+                {
+                    tEF = MapTafelEF.MapToDB(restaurantId, Id, tafel, ctx);
+                }
+
+                SaveAndClear();
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("UpdateTafel", ex);
+            }
+        }
+
+        public void DeleteTafel(int restaurantId, int Id)
+        {
+            try
+            {
+                var tafelToDelete = ctx.Tafels.SingleOrDefault(x => x.Restaurant.Id == restaurantId && x.Id == Id);
+
+                if (tafelToDelete != null)
+                {
+                    ctx.Tafels.Remove(tafelToDelete);
+                    SaveAndClear();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("DeleteTafel", ex);
+            }
+        }
+
+        public bool ExistsTafel(int Id)
+        {
+            try
+            {
+                return ctx.Tafels.Any(x => x.Id == Id);
+            }
+            catch (Exception ex)
+            {
+                throw new RepositoryException("ExistsTafel", ex);
             }
         }
     }

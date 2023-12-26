@@ -18,105 +18,97 @@ namespace Restaurant.BL.Managers
             _reservatieRepo = reservatieRepo;
         }
 
-        public List<Reservatie> GetReservatiesByDateAndRestaurantNaam(DateTime Datum, string RestaurantNaam)
+
+        public Reservatie AddReservatie(int klantenNr, int restaurantId, Reservatie reservatie)
         {
             try
             {
-                List<Reservatie> reservaties = _reservatieRepo.GetReservatiesByDateAndRestaurantNaam(Datum, RestaurantNaam);
-
-                return reservaties;
-            }
-            catch (Exception ex)
-            {
-                throw new ReservatieManagerException("GetReservatiesByDateAndRestaurantNaam", ex);
-            }
-        }
-
-        public List<Reservatie> GetReservatiesByDateRange(DateTime Datum)
-        {
-            try
-            {
-                List<Reservatie> reservaties = _reservatieRepo.GetReservatiesByDateRange(Datum);
-
-                return reservaties;
-            }
-            catch (Exception ex)
-            {
-                throw new ReservatieManagerException("GetReservatiesByDateRange", ex);
-            }
-        }
-
-        public List<Reservatie> GetReservatiesGebruiker(int klantenNr)
-        {
-            try
-            {
-                return _reservatieRepo.GetReservatiesGebruiker(klantenNr);
-            }
-            catch (Exception ex)
-            {
-                throw new ReservatieManagerException("GetReservatiesGebruiker", ex);
-            }
-        }
-
-        public void AddReservaties(Reservatie reservatie)
-        {
-            try
-            {
-                if (!_reservatieRepo.ReservatieExists(reservatie.ReservatieNr))
+                if (reservatie == null)
                 {
-                    _reservatieRepo.AddReservatie(reservatie);
+                    throw new ReservatieManagerException($"AddReservatie - De reservatie mag niet null zijn!");
                 }
-                else
-                {
-                    throw new ReservatieManagerException($"AddReservaties - De reservatie bestaat al");
-                }
+
+                return _reservatieRepo.AddReservatie(klantenNr, restaurantId, reservatie);
             }
             catch (Exception ex)
             {
-                throw new ReservatieManagerException("", ex);
+                throw new ReservatieManagerException("AddReservatie", ex);
             }
         }
-
-        public void DeleteReservaties(Reservatie reservatie)
+        public void UpdateReservatie(int klantenNr, int restaurantId, int reservatieNr, Reservatie reservatie)
         {
             try
             {
-                if (_reservatieRepo.ReservatieExists(reservatie.ReservatieNr))
-                {
-                    _reservatieRepo.CancelReservatie(reservatie);
-                }
-                else
-                {
-                    throw new ReservatieManagerException($"DeleteReservaties - De reservatie bestaat niet");
-                }
+                _reservatieRepo.UpdateReservatie(klantenNr, restaurantId, reservatieNr, reservatie);
             }
             catch (Exception ex)
             {
-                throw new ReservatieManagerException("", ex);
+                throw new ReservatieManagerException("UpdateReservatie", ex);
             }
         }
 
-        public void UpdateReservaties(Reservatie reservatie)
+        public void DeleteReservatie(int klantenNr, int reservatieNr)
         {
             try
             {
-                _reservatieRepo.UpdateReservatie(reservatie);
+                if (!_reservatieRepo.ExistsResertvatie(reservatieNr))
+                {
+                    throw new ReservatieManagerException($"DeleteReservatie - De reservatie bestaat niet");
+                }
+
+                _reservatieRepo.DeleteReservatie(klantenNr, reservatieNr);
             }
             catch (Exception ex)
             {
-                throw new ReservatieManagerException("", ex);
+                throw new ReservatieManagerException("DeleteReservatie", ex);
             }
         }
 
-        public bool ReservatiesExists(int reservatieNr)
+        public List<Reservatie> GetAllReservationsByKlantenNr(int klantenNr, DateTime? beginDatum, DateTime? eindDatum)
         {
             try
             {
-                return _reservatieRepo.ReservatieExists(reservatieNr);
+                return _reservatieRepo.GetAllReservationsByKlantenNr(klantenNr, beginDatum, eindDatum);
             }
             catch (Exception ex)
             {
-                throw new ReservatieManagerException("ReservatiesExists", ex);
+                throw new ReservatieManagerException("GetAllReservationsByDate", ex);
+            }
+        }
+
+        public Reservatie GetReservationsByReservatieNr(int reservatieNr)
+        {
+            try
+            {
+                return _reservatieRepo.GetReservationsByReservatieNr(reservatieNr);
+            }
+            catch (Exception ex)
+            {
+                throw new ReservatieManagerException("GetReservationsByReservatieNr", ex);
+            }
+        }
+
+        public List<Reservatie> GetAllReservationsByRestauranNaam(string restauranNaam, DateTime? beginDatum, DateTime? eindDatum)
+        {
+            try
+            {
+                return _reservatieRepo.GetAllReservationsByRestauranNaam(restauranNaam, beginDatum, eindDatum);
+            }
+            catch (Exception ex)
+            {
+                throw new ReservatieManagerException("GetAllReservationsByRestauranNaam", ex);
+            }
+        }
+
+        public bool ExistsResertvatie(int reservatieNr)
+        {
+            try
+            {
+                return _reservatieRepo.ExistsResertvatie(reservatieNr);
+            }
+            catch (Exception ex)
+            {
+                throw new ReservatieManagerException("ExistsResertvatie", ex);
             }
         }
     }

@@ -32,30 +32,36 @@ namespace Restaurant.EF.Repositories
         {
             try
             {
-                GebruikerEF gebruikerEF = MapGebruikerEF.MapToDB(gebruiker, ctx);
+                GebruikerEF gebruikerEF = MapGebruikerEF.MapToDB(0, gebruiker, ctx);
                 ctx.Gebruiker.Add(gebruikerEF);
                 SaveAndClear();
                 return gebruiker;
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw new RepositoryException("AddGebruiker", ex);
             }
         }
 
-        public void DeleteGebruiker(Gebruiker gebruiker)
+        public void DeleteGebruiker(string email)
         {
             try
             {
-                ctx.Gebruiker.Remove(new GebruikerEF() { KlantenNummer = gebruiker.KlantenNr});
-                SaveAndClear();
+                var gebruikerToDelete = ctx.Gebruiker.SingleOrDefault(x => x.Email == email);
 
-            } catch (Exception ex)
+                if (gebruikerToDelete != null)
+                {
+                    ctx.Gebruiker.Remove(gebruikerToDelete);
+                    SaveAndClear();
+                }
+            }
+            catch (Exception ex)
             {
                 throw new RepositoryException("DeleteGebruiker", ex);
             }
         }
 
-        public bool GebruikerExists(string email)
+        public bool ExistsGebruiker(string email)
         {
             try
             {
@@ -67,11 +73,11 @@ namespace Restaurant.EF.Repositories
             }
         }
 
-        public List<Gebruiker> GetGebruikers()
+        public Gebruiker GetGebruikerByEmail(string email)
         {
             try
             {
-                return ctx.Gebruiker.Select(x => MapGebruikerEF.MapToDomain(x)).AsNoTracking().ToList();
+                return ctx.Gebruiker.Where(x => x.Email == email).Include(x => x.Reservaties).ThenInclude(x => x.Restaurant).Select(x => MapGebruikerEF.MapToDomain(x)).FirstOrDefault();
             }
             catch (Exception ex)
             {
@@ -79,35 +85,21 @@ namespace Restaurant.EF.Repositories
             }
         }
 
-        public Gebruiker GetGebruikersByKlantNr(int klantNr)
+        public void UpdateGebruiker(int klantenNr, Gebruiker gebruiker)
         {
             try
             {
-                return ctx.Gebruiker.Where(x => x.KlantenNummer == klantNr).Select(x => MapGebruikerEF.MapToDomain(x)).FirstOrDefault();
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("GetGebruikers", ex);
-            }
-        }
+                GebruikerEF gEF = ctx.Gebruiker.Find(klantenNr);
 
-        public Gebruiker GetGebruikersByEmail(string email)
-        {
-            try
-            {
-                return ctx.Gebruiker.Where(x => x.Email == email).Select(x => MapGebruikerEF.MapToDomain(x)).FirstOrDefault();
-            }
-            catch (Exception ex)
-            {
-                throw new RepositoryException("GetGebruikers", ex);
-            }
-        }
+                if (gEF == null)
+                {
+                    throw new RepositoryException($"Gebruiker met ID {klantenNr} is niet gevonden!");
+                }
+                else
+                {
+                    gEF = MapGebruikerEF.MapToDB(klantenNr, gebruiker, ctx);
+                }
 
-        public void UpdateGebruiker(Gebruiker gebruiker)
-        {
-            try
-            {
-                ctx.Gebruiker.Update(MapGebruikerEF.MapToDB(gebruiker, ctx));
                 SaveAndClear();
             }
             catch (Exception ex)

@@ -15,14 +15,22 @@ namespace Restaurant.EF.Models
             // Default constructor
         }
 
-        public ReservatiesEF(int reservatieNummer, RestaurantEF restaurant, GebruikerEF gebruiker, int aantalPlaatsen, DateTime datum, TimeSpan uur, int tafelNummer)
+        public ReservatiesEF(RestaurantEF restaurant, GebruikerEF gebruiker, int aantalPlaatsen, DateTime datumUur, int tafelNummer)
+        {
+            Restaurant = restaurant;
+            Gebruiker = gebruiker;
+            AantalPlaatsen = aantalPlaatsen;
+            DatumUur = datumUur;
+            TafelNummer = tafelNummer;
+        }
+
+        public ReservatiesEF(int reservatieNummer, RestaurantEF restaurant, GebruikerEF gebruiker, int aantalPlaatsen, DateTime datumUur, int tafelNummer)
         {
             ReservatieNummer = reservatieNummer;
             Restaurant = restaurant;
             Gebruiker = gebruiker;
             AantalPlaatsen = aantalPlaatsen;
-            Datum = datum;
-            Uur = uur;
+            DatumUur = datumUur;
             TafelNummer = tafelNummer;
         }
 
@@ -37,8 +45,7 @@ namespace Restaurant.EF.Models
         public GebruikerEF Gebruiker { get; set; }
 
         public int AantalPlaatsen { get; set; }
-        public DateTime Datum { get; set; }
-        public TimeSpan Uur { get; set; }
+        public DateTime DatumUur { get; set; }
         public int TafelNummer { get; set; }
     }
 }
