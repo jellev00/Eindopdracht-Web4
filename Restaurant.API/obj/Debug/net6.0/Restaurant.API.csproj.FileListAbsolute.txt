@@ -63,3 +63,10 @@ D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\obj\Deb
 D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\obj\Debug\net6.0\Restaurant.API.pdb
 D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\obj\Debug\net6.0\Restaurant.API.genruntimeconfig.cache
 D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\obj\Debug\net6.0\ref\Restaurant.API.dll
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\bin\Debug\net6.0\Serilog.dll
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\bin\Debug\net6.0\Serilog.Extensions.Logging.File.dll
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\bin\Debug\net6.0\Serilog.Sinks.Async.dll
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\bin\Debug\net6.0\Serilog.Sinks.File.dll
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\bin\Debug\net6.0\Serilog.Sinks.RollingFile.dll

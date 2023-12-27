@@ -22,7 +22,7 @@ namespace Restaurant.API.Mappers
                     reservatiesURL = null;
                 } else
                 {
-                    reservatiesURL = $"{url}/{g.KlantenNr}/Reservaties/GetAllReservations";
+                    reservatiesURL = $"{url}/{g.KlantenNr}/Reservaties/GetAllReservaties";
                 }
 
                 //List<string> reservaties = reservatieManager.GetAllReservationsByKlantenNr(g.KlantenNr, null, null).Select(x => gebruikerURL + $"/reservatie/{x.ReservatieNr}").ToList();
@@ -100,7 +100,8 @@ namespace Restaurant.API.Mappers
                 }
                 else
                 {
-                    reservatiesURL = $"{url}/{r.Id}/Reservaties/GetAllReservations";
+                    string encodedRestaurantNaam = Uri.EscapeDataString(r.Naam);
+                    reservatiesURL = $"{url}/{encodedRestaurantNaam}/Reservaties/GetAllReservaties";
                 }
 
                 if (r.Tafel == null || r.Tafel.Count == 0)
@@ -142,7 +143,8 @@ namespace Restaurant.API.Mappers
                     }
                     else
                     {
-                        reservatiesURL = $"{url}/{r.Id}/Reservaties/GetAllReservations";
+                        string encodedRestaurantNaam = Uri.EscapeDataString(r.Naam);
+                        reservatiesURL = $"{url}/{encodedRestaurantNaam}/Reservaties/GetAllReservaties";
                     }
 
                     if (r.Tafel == null || r.Tafel.Count == 0)

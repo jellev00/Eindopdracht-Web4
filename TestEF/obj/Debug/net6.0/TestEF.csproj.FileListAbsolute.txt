@@ -46,8 +46,8 @@ D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\TestEF\bin\Debug\net6.
 D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\TestEF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\TestEF\bin\Debug\net6.0\Restaurant.BL.dll
 D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\TestEF\bin\Debug\net6.0\Restaurant.EF.dll
-D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\TestEF\bin\Debug\net6.0\Restaurant.EF.pdb
 D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\TestEF\bin\Debug\net6.0\Restaurant.BL.pdb
+D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\TestEF\bin\Debug\net6.0\Restaurant.EF.pdb
 D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\TestEF\obj\Debug\net6.0\TestEF.csproj.AssemblyReference.cache
 D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\TestEF\obj\Debug\net6.0\TestEF.GeneratedMSBuildEditorConfig.editorconfig
 D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\TestEF\obj\Debug\net6.0\TestEF.AssemblyInfoInputs.cache

@@ -1,0 +1,38 @@
+﻿<Window x:Class="Restaurant.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Restaurant.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Datum:" />
+                <DatePicker Name="Datum" Width="100" Margin="0,0,5,0"></DatePicker>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Aantalplaatsen:" />
+                <TextBox Name="Aantalplaatsen" Width="100" Margin="0,0,5,0"/>
+            </StackPanel>
+        </StackPanel>
+        <Button Grid.Row="0" Grid.Column="1" Name="SearchRestaurantButton" Content="Search Restaurants" Click="SearchRestaurantButton_Click" Margin="5"/>
+        <DataGrid Name="RestaurantsDataGrid" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" IsReadOnly="True" >
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Registration" Click="AddRegistration_Click"></MenuItem>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+    </Grid>
+</Window>

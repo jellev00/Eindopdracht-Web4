@@ -1,6 +1,13 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Restaurant.BL.Interfaces;
 using Restaurant.BL.Managers;
 using Restaurant.EF.Repositories;
+using Restaurant.API.Middleware;
+
 
 namespace Restaurant.API
 {
@@ -19,11 +26,18 @@ namespace Restaurant.API
             builder.Services.AddSingleton<IRestaurantRepo>(r => new RepoRestaurantEF(connectionString));
             builder.Services.AddSingleton<RestaurantManager>();
 
+            builder.Logging.ClearProviders();
+            builder.Logging.AddConsole();
+            builder.Logging.AddDebug();
+            builder.Services.AddLogging(); // Add this line to register ILogger
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            var logFactory = LoggerFactory.Create(builder => builder.AddConsole());
+            ILogger logger = logFactory.CreateLogger("middleware");
 
             var app = builder.Build();
 
@@ -34,8 +48,8 @@ namespace Restaurant.API
                 app.UseSwaggerUI();
             }
 
+            app.UseRequestResponseLoggingMiddleware();
             app.UseAuthorization();
-
 
             app.MapControllers();
 
