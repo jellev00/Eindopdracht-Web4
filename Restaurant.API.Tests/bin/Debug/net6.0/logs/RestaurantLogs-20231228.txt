@@ -1,0 +1,113 @@
+2023-12-28T19:48:46.0701621+01:00  [INF] Restaurant met naam NonExistingRestaurant niet gevonden voor verwijdering. (44e56f9a)
+2023-12-28T19:48:46.0606991+01:00  [INF] Restaurant met naam ExistingRestaurant verwijderd. (f4a6730d)
+2023-12-28T19:48:46.0756478+01:00  [INF] Alle restaurants opgehaald. (a5701be3)
+2023-12-28T19:48:46.0865358+01:00  [INF] Restaurant toegevoegd: New Restaurant (8fccdbdb)
+2023-12-28T19:48:46.0943702+01:00  [ERR] Fout bij het ophalen van het restaurant met naam TestRestaurant (fb87d40e)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.RestaurantController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\RestaurantController.cs:line 53
+2023-12-28T19:48:46.1459352+01:00  [INF] Restaurant geüpdatet met ID 1 (544a8117)
+2023-12-28T19:52:41.0771150+01:00  [INF] Restaurant met naam ExistingRestaurant verwijderd. (f4a6730d)
+2023-12-28T19:52:41.0872595+01:00  [INF] Alle restaurants opgehaald. (a5701be3)
+2023-12-28T19:52:41.0846173+01:00  [INF] Restaurant met naam NonExistingRestaurant niet gevonden voor verwijdering. (44e56f9a)
+2023-12-28T19:52:41.0955647+01:00  [INF] Restaurant toegevoegd: New Restaurant (8fccdbdb)
+2023-12-28T19:52:41.1032858+01:00  [ERR] Fout bij het ophalen van het restaurant met naam TestRestaurant (fb87d40e)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.RestaurantController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\RestaurantController.cs:line 53
+2023-12-28T19:52:41.1126848+01:00  [INF] Restaurant geüpdatet met ID 1 (544a8117)
+2023-12-28T19:55:48.2027047+01:00  [INF] Restaurant met naam ExistingRestaurant verwijderd. (f4a6730d)
+2023-12-28T19:55:48.2102994+01:00  [INF] Restaurant met naam NonExistingRestaurant niet gevonden voor verwijdering. (44e56f9a)
+2023-12-28T19:55:48.2131432+01:00  [INF] Tafel met ID: 1 verwijderd in restaurant met ID: 1 (dca65494)
+2023-12-28T19:55:48.2227554+01:00  [INF] Tafel geüpdatet voor restaurant met ID: 1, TafelId: 1 (c0243474)
+2023-12-28T19:55:48.2342596+01:00  [ERR] Fout bij het ophalen van tafels (d2894892)
+Restaurant.API.Exceptions.MapException: MapFromTafelsDomain
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Mappers.MapFromDomain.MapFromTafelsDomain(String url, List`1 tafels) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 179
+   --- End of inner exception stack trace ---
+   at Restaurant.API.Mappers.MapFromDomain.MapFromTafelsDomain(String url, List`1 tafels) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 190
+   at Restaurant.API.Controllers.RestaurantController.GetTafels(Int32 restaurantId) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\RestaurantController.cs:line 169
+2023-12-28T19:55:48.2447987+01:00  [INF] Alle restaurants opgehaald. (a5701be3)
+2023-12-28T19:55:48.2524661+01:00  [INF] Restaurant toegevoegd: New Restaurant (8fccdbdb)
+2023-12-28T19:55:48.2572747+01:00  [ERR] Fout bij het ophalen van het restaurant met naam TestRestaurant (fb87d40e)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.RestaurantController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\RestaurantController.cs:line 53
+2023-12-28T19:55:48.2615617+01:00  [INF] Restaurant geüpdatet met ID 1 (544a8117)
+2023-12-28T19:55:48.2660328+01:00  [ERR] Fout bij het toevoegen van een tafel (62782d51)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.RestaurantController.AddTafel(String restaurantName, TafelRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\RestaurantController.cs:line 141
+2023-12-28T19:55:48.2685358+01:00  [INF] Tafel met ID: 2 niet gevonden voor verwijdering in restaurant met ID: 1 (9a081351)
+2023-12-28T19:58:13.1509295+01:00  [INF] Tafel met ID: 1 verwijderd in restaurant met ID: 1 (dca65494)
+2023-12-28T19:58:13.1414697+01:00  [INF] Restaurant met naam ExistingRestaurant verwijderd. (f4a6730d)
+2023-12-28T19:58:13.1480219+01:00  [INF] Restaurant met naam NonExistingRestaurant niet gevonden voor verwijdering. (44e56f9a)
+2023-12-28T19:58:13.1555488+01:00  [INF] Tafel geüpdatet voor restaurant met ID: 1, TafelId: 1 (c0243474)
+2023-12-28T19:58:13.1822493+01:00  [ERR] Fout bij het ophalen van tafels (d2894892)
+Restaurant.API.Exceptions.MapException: MapFromTafelsDomain
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Mappers.MapFromDomain.MapFromTafelsDomain(String url, List`1 tafels) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 179
+   --- End of inner exception stack trace ---
+   at Restaurant.API.Mappers.MapFromDomain.MapFromTafelsDomain(String url, List`1 tafels) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 190
+   at Restaurant.API.Controllers.RestaurantController.GetTafels(Int32 restaurantId) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\RestaurantController.cs:line 169
+2023-12-28T19:58:13.1910417+01:00  [INF] Alle restaurants opgehaald. (a5701be3)
+2023-12-28T19:58:13.1960373+01:00  [INF] Restaurant toegevoegd: New Restaurant (8fccdbdb)
+2023-12-28T19:58:13.2014914+01:00  [ERR] Fout bij het ophalen van het restaurant met naam TestRestaurant (fb87d40e)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.RestaurantController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\RestaurantController.cs:line 53
+2023-12-28T19:58:13.2058070+01:00  [INF] Restaurant geüpdatet met ID 1 (544a8117)
+2023-12-28T19:58:13.2095512+01:00  [ERR] Fout bij het toevoegen van een tafel (62782d51)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.RestaurantController.AddTafel(String restaurantName, TafelRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\RestaurantController.cs:line 141
+2023-12-28T19:58:13.2122391+01:00  [INF] Tafel met ID: 2 niet gevonden voor verwijdering in restaurant met ID: 1 (9a081351)
+2023-12-28T20:42:44.2354124+01:00  [INF] Restaurant met naam ExistingRestaurant verwijderd. (f4a6730d)
+2023-12-28T20:42:44.2473535+01:00  [INF] Restaurant met naam NonExistingRestaurant niet gevonden voor verwijdering. (44e56f9a)
+2023-12-28T20:42:44.2503382+01:00  [INF] Tafel met ID: 1 verwijderd in restaurant met ID: 1 (dca65494)
+2023-12-28T20:42:44.2562213+01:00  [INF] Tafel geüpdatet voor restaurant met ID: 1, TafelId: 1 (c0243474)
+2023-12-28T20:42:44.2612367+01:00  [ERR] Fout bij het ophalen van tafels (d2894892)
+Restaurant.API.Exceptions.MapException: MapFromTafelsDomain
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Mappers.MapFromDomain.MapFromTafelsDomain(String url, List`1 tafels) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 179
+   --- End of inner exception stack trace ---
+   at Restaurant.API.Mappers.MapFromDomain.MapFromTafelsDomain(String url, List`1 tafels) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 190
+   at Restaurant.API.Controllers.RestaurantController.GetTafels(Int32 restaurantId) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\RestaurantController.cs:line 169
+2023-12-28T20:42:44.3081447+01:00  [INF] Geen reserveringen gevonden voor restaurant: TestRestaurant, beginDatum: 02/01/2024 20:42:44, eindDatum: 07/01/2024 20:42:44 (091d8b57)
+2023-12-28T20:42:44.3115526+01:00  [INF] Alle restaurants opgehaald. (a5701be3)
+2023-12-28T20:42:44.3176255+01:00  [INF] Restaurant toegevoegd: New Restaurant (8fccdbdb)
+2023-12-28T20:42:44.3252796+01:00  [INF] Geen reserveringen gevonden voor restaurant: TestRestaurant, beginDatum: 02/01/2024 20:42:44, eindDatum: 07/01/2024 20:42:44 (091d8b57)
+2023-12-28T20:42:44.3283950+01:00  [ERR] Fout bij het ophalen van het restaurant met naam TestRestaurant (fb87d40e)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.RestaurantController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\RestaurantController.cs:line 53
+2023-12-28T20:42:44.3320005+01:00  [INF] Restaurant geüpdatet met ID 1 (544a8117)
+2023-12-28T20:42:44.3346967+01:00  [ERR] Fout bij het toevoegen van een tafel (62782d51)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.RestaurantController.AddTafel(String restaurantName, TafelRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\RestaurantController.cs:line 141
+2023-12-28T20:42:44.3367270+01:00  [INF] Tafel met ID: 2 niet gevonden voor verwijdering in restaurant met ID: 1 (9a081351)

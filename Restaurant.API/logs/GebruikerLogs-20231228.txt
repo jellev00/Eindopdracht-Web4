@@ -1,0 +1,242 @@
+2023-12-28T10:30:13.6692897+01:00  [INF] Gebruiker verwijderen met e-mail: jonas.vandriessche@gmail.com (19679e0e)
+2023-12-28T10:30:15.9022770+01:00  [INF] Gebruiker met e-mail jonas.vandriessche@gmail.com succesvol verwijderd (7ce6faec)
+2023-12-28T10:30:15.9113078+01:00  [INF] Request "DELETE" "/api/Gebruiker/DeleteGebruiker/jonas.vandriessche@gmail.com" => 204 (b9f40507)
+2023-12-28T10:30:22.3479343+01:00 0HN07GUA3J90F:00000005 [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:30:22.3496017+01:00 0HN07GUA3J90F:00000005 [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:30:22.4836980+01:00 0HN07GUA3J90F:00000005 [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jonas.vandriessche@gmail.com (97e2b94e)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T10:30:22.4837546+01:00 0HN07GUA3J90F:00000005 [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jonas.vandriessche@gmail.com (97e2b94e)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T10:30:22.4920500+01:00 0HN07GUA3J90F:00000005 [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 404 (b9f40507)
+2023-12-28T10:30:22.4920816+01:00 0HN07GUA3J90F:00000005 [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 404 (b9f40507)
+2023-12-28T10:30:56.7089401+01:00 0HN07GUA3J90F:00000006 [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T10:30:56.7089793+01:00 0HN07GUA3J90F:00000006 [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T10:30:56.7089900+01:00 0HN07GUA3J90F:00000006 [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T10:30:56.7418484+01:00 0HN07GUA3J90F:00000006 [INF] Request "POST" "/api/Gebruiker/AddGebruiker" => 201 (b9f40507)
+2023-12-28T10:30:56.7418952+01:00 0HN07GUA3J90F:00000006 [INF] Request "POST" "/api/Gebruiker/AddGebruiker" => 201 (b9f40507)
+2023-12-28T10:30:56.7419074+01:00 0HN07GUA3J90F:00000006 [INF] Request "POST" "/api/Gebruiker/AddGebruiker" => 201 (b9f40507)
+2023-12-28T10:31:03.2488755+01:00 0HN07GUA3J90F:00000007 [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:31:03.2489253+01:00 0HN07GUA3J90F:00000007 [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:31:03.2489379+01:00 0HN07GUA3J90F:00000007 [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:31:03.2489581+01:00 0HN07GUA3J90F:00000007 [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:31:03.4166616+01:00 0HN07GUA3J90F:00000007 [INF] Gebruiker succesvol opgehaald (a267b159)
+2023-12-28T10:31:03.4167137+01:00 0HN07GUA3J90F:00000007 [INF] Gebruiker succesvol opgehaald (a267b159)
+2023-12-28T10:31:03.4167249+01:00 0HN07GUA3J90F:00000007 [INF] Gebruiker succesvol opgehaald (a267b159)
+2023-12-28T10:31:03.4167813+01:00 0HN07GUA3J90F:00000007 [INF] Gebruiker succesvol opgehaald (a267b159)
+2023-12-28T10:31:03.4192681+01:00 0HN07GUA3J90F:00000007 [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 200 (b9f40507)
+2023-12-28T10:31:03.4193149+01:00 0HN07GUA3J90F:00000007 [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 200 (b9f40507)
+2023-12-28T10:31:03.4193030+01:00 0HN07GUA3J90F:00000007 [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 200 (b9f40507)
+2023-12-28T10:31:03.4193255+01:00 0HN07GUA3J90F:00000007 [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 200 (b9f40507)
+2023-12-28T10:31:15.7937517+01:00 0HN07GUA3J90F:00000008 [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:31:15.7937936+01:00 0HN07GUA3J90F:00000008 [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:31:15.7938410+01:00 0HN07GUA3J90F:00000008 [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:31:15.7938531+01:00 0HN07GUA3J90F:00000008 [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:31:15.7938629+01:00 0HN07GUA3J90F:00000008 [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:31:15.7982563+01:00 0HN07GUA3J90F:00000008 [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:31:15.7983008+01:00 0HN07GUA3J90F:00000008 [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:31:15.7983283+01:00 0HN07GUA3J90F:00000008 [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:31:15.7983667+01:00 0HN07GUA3J90F:00000008 [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:31:15.7983939+01:00 0HN07GUA3J90F:00000008 [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:31:15.9758192+01:00 0HN07GUA3J90F:00000009 [INF] Request "GET" "/favicon.ico" => 404 (b9f40507)
+2023-12-28T10:31:15.9758821+01:00 0HN07GUA3J90F:00000009 [INF] Request "GET" "/favicon.ico" => 404 (b9f40507)
+2023-12-28T10:31:15.9758909+01:00 0HN07GUA3J90F:00000009 [INF] Request "GET" "/favicon.ico" => 404 (b9f40507)
+2023-12-28T10:31:15.9758990+01:00 0HN07GUA3J90F:00000009 [INF] Request "GET" "/favicon.ico" => 404 (b9f40507)
+2023-12-28T10:31:15.9759071+01:00 0HN07GUA3J90F:00000009 [INF] Request "GET" "/favicon.ico" => 404 (b9f40507)
+2023-12-28T10:31:59.8931945+01:00 0HN07GUA3J90F:0000000A [INF] Reservatie toegevoegd voor klantenNr 3, restaurantId 2 (ad2b4a83)
+2023-12-28T10:31:59.8932579+01:00 0HN07GUA3J90F:0000000A [INF] Reservatie toegevoegd voor klantenNr 3, restaurantId 2 (ad2b4a83)
+2023-12-28T10:31:59.8932848+01:00 0HN07GUA3J90F:0000000A [INF] Reservatie toegevoegd voor klantenNr 3, restaurantId 2 (ad2b4a83)
+2023-12-28T10:31:59.8932964+01:00 0HN07GUA3J90F:0000000A [INF] Reservatie toegevoegd voor klantenNr 3, restaurantId 2 (ad2b4a83)
+2023-12-28T10:31:59.8933078+01:00 0HN07GUA3J90F:0000000A [INF] Reservatie toegevoegd voor klantenNr 3, restaurantId 2 (ad2b4a83)
+2023-12-28T10:31:59.8933231+01:00 0HN07GUA3J90F:0000000A [INF] Reservatie toegevoegd voor klantenNr 3, restaurantId 2 (ad2b4a83)
+2023-12-28T10:31:59.9015122+01:00 0HN07GUA3J90F:0000000A [INF] Request "POST" "/api/Gebruiker/3/Restaurant/2/Reservaties/AddReservatie" => 201 (b9f40507)
+2023-12-28T10:31:59.9015513+01:00 0HN07GUA3J90F:0000000A [INF] Request "POST" "/api/Gebruiker/3/Restaurant/2/Reservaties/AddReservatie" => 201 (b9f40507)
+2023-12-28T10:31:59.9015677+01:00 0HN07GUA3J90F:0000000A [INF] Request "POST" "/api/Gebruiker/3/Restaurant/2/Reservaties/AddReservatie" => 201 (b9f40507)
+2023-12-28T10:31:59.9015789+01:00 0HN07GUA3J90F:0000000A [INF] Request "POST" "/api/Gebruiker/3/Restaurant/2/Reservaties/AddReservatie" => 201 (b9f40507)
+2023-12-28T10:31:59.9015999+01:00 0HN07GUA3J90F:0000000A [INF] Request "POST" "/api/Gebruiker/3/Restaurant/2/Reservaties/AddReservatie" => 201 (b9f40507)
+2023-12-28T10:31:59.9016104+01:00 0HN07GUA3J90F:0000000A [INF] Request "POST" "/api/Gebruiker/3/Restaurant/2/Reservaties/AddReservatie" => 201 (b9f40507)
+2023-12-28T10:32:34.7731140+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:34.7731651+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:34.7731902+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:34.7732043+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:34.7732173+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:34.7732342+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:34.7732467+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:34.7895722+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker succesvol opgehaald (a267b159)
+2023-12-28T10:32:34.7896124+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker succesvol opgehaald (a267b159)
+2023-12-28T10:32:34.7896347+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker succesvol opgehaald (a267b159)
+2023-12-28T10:32:34.7896443+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker succesvol opgehaald (a267b159)
+2023-12-28T10:32:34.7896542+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker succesvol opgehaald (a267b159)
+2023-12-28T10:32:34.7896677+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker succesvol opgehaald (a267b159)
+2023-12-28T10:32:34.7896776+01:00 0HN07GUA3J90F:0000000B [INF] Gebruiker succesvol opgehaald (a267b159)
+2023-12-28T10:32:34.7922496+01:00 0HN07GUA3J90F:0000000B [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 200 (b9f40507)
+2023-12-28T10:32:34.7922826+01:00 0HN07GUA3J90F:0000000B [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 200 (b9f40507)
+2023-12-28T10:32:34.7923027+01:00 0HN07GUA3J90F:0000000B [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 200 (b9f40507)
+2023-12-28T10:32:34.7923121+01:00 0HN07GUA3J90F:0000000B [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 200 (b9f40507)
+2023-12-28T10:32:34.7923207+01:00 0HN07GUA3J90F:0000000B [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 200 (b9f40507)
+2023-12-28T10:32:34.7923297+01:00 0HN07GUA3J90F:0000000B [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 200 (b9f40507)
+2023-12-28T10:32:34.7923403+01:00 0HN07GUA3J90F:0000000B [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 200 (b9f40507)
+2023-12-28T10:32:37.0859509+01:00 0HN07GUA3J90F:0000000C [INF] Reserveringen opgehaald voor klantenNr 3 (43a465f9)
+2023-12-28T10:32:37.0860076+01:00 0HN07GUA3J90F:0000000C [INF] Reserveringen opgehaald voor klantenNr 3 (43a465f9)
+2023-12-28T10:32:37.0860208+01:00 0HN07GUA3J90F:0000000C [INF] Reserveringen opgehaald voor klantenNr 3 (43a465f9)
+2023-12-28T10:32:37.0860523+01:00 0HN07GUA3J90F:0000000C [INF] Reserveringen opgehaald voor klantenNr 3 (43a465f9)
+2023-12-28T10:32:37.0860677+01:00 0HN07GUA3J90F:0000000C [INF] Reserveringen opgehaald voor klantenNr 3 (43a465f9)
+2023-12-28T10:32:37.0860821+01:00 0HN07GUA3J90F:0000000C [INF] Reserveringen opgehaald voor klantenNr 3 (43a465f9)
+2023-12-28T10:32:37.0860984+01:00 0HN07GUA3J90F:0000000C [INF] Reserveringen opgehaald voor klantenNr 3 (43a465f9)
+2023-12-28T10:32:37.0861117+01:00 0HN07GUA3J90F:0000000C [INF] Reserveringen opgehaald voor klantenNr 3 (43a465f9)
+2023-12-28T10:32:37.0895127+01:00 0HN07GUA3J90F:0000000C [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 200 (b9f40507)
+2023-12-28T10:32:37.0895557+01:00 0HN07GUA3J90F:0000000C [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 200 (b9f40507)
+2023-12-28T10:32:37.0895825+01:00 0HN07GUA3J90F:0000000C [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 200 (b9f40507)
+2023-12-28T10:32:37.0895949+01:00 0HN07GUA3J90F:0000000C [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 200 (b9f40507)
+2023-12-28T10:32:37.0896064+01:00 0HN07GUA3J90F:0000000C [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 200 (b9f40507)
+2023-12-28T10:32:37.0896240+01:00 0HN07GUA3J90F:0000000C [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 200 (b9f40507)
+2023-12-28T10:32:37.0896361+01:00 0HN07GUA3J90F:0000000C [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 200 (b9f40507)
+2023-12-28T10:32:37.0896474+01:00 0HN07GUA3J90F:0000000C [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 200 (b9f40507)
+2023-12-28T10:32:44.4747761+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker verwijderen met e-mail: jonas.vandriessche@gmail.com (19679e0e)
+2023-12-28T10:32:44.4748446+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker verwijderen met e-mail: jonas.vandriessche@gmail.com (19679e0e)
+2023-12-28T10:32:44.4748603+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker verwijderen met e-mail: jonas.vandriessche@gmail.com (19679e0e)
+2023-12-28T10:32:44.4748785+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker verwijderen met e-mail: jonas.vandriessche@gmail.com (19679e0e)
+2023-12-28T10:32:44.4749126+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker verwijderen met e-mail: jonas.vandriessche@gmail.com (19679e0e)
+2023-12-28T10:32:44.4748931+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker verwijderen met e-mail: jonas.vandriessche@gmail.com (19679e0e)
+2023-12-28T10:32:44.4749265+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker verwijderen met e-mail: jonas.vandriessche@gmail.com (19679e0e)
+2023-12-28T10:32:44.4749447+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker verwijderen met e-mail: jonas.vandriessche@gmail.com (19679e0e)
+2023-12-28T10:32:44.4749574+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker verwijderen met e-mail: jonas.vandriessche@gmail.com (19679e0e)
+2023-12-28T10:32:44.4991040+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker met e-mail jonas.vandriessche@gmail.com succesvol verwijderd (7ce6faec)
+2023-12-28T10:32:44.4991994+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker met e-mail jonas.vandriessche@gmail.com succesvol verwijderd (7ce6faec)
+2023-12-28T10:32:44.4992296+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker met e-mail jonas.vandriessche@gmail.com succesvol verwijderd (7ce6faec)
+2023-12-28T10:32:44.4992481+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker met e-mail jonas.vandriessche@gmail.com succesvol verwijderd (7ce6faec)
+2023-12-28T10:32:44.4992611+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker met e-mail jonas.vandriessche@gmail.com succesvol verwijderd (7ce6faec)
+2023-12-28T10:32:44.4992808+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker met e-mail jonas.vandriessche@gmail.com succesvol verwijderd (7ce6faec)
+2023-12-28T10:32:44.4992975+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker met e-mail jonas.vandriessche@gmail.com succesvol verwijderd (7ce6faec)
+2023-12-28T10:32:44.4993310+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker met e-mail jonas.vandriessche@gmail.com succesvol verwijderd (7ce6faec)
+2023-12-28T10:32:44.4993145+01:00 0HN07GUA3J90F:0000000D [INF] Gebruiker met e-mail jonas.vandriessche@gmail.com succesvol verwijderd (7ce6faec)
+2023-12-28T10:32:44.5017718+01:00 0HN07GUA3J90F:0000000D [INF] Request "DELETE" "/api/Gebruiker/DeleteGebruiker/jonas.vandriessche@gmail.com" => 204 (b9f40507)
+2023-12-28T10:32:44.5018021+01:00 0HN07GUA3J90F:0000000D [INF] Request "DELETE" "/api/Gebruiker/DeleteGebruiker/jonas.vandriessche@gmail.com" => 204 (b9f40507)
+2023-12-28T10:32:44.5018293+01:00 0HN07GUA3J90F:0000000D [INF] Request "DELETE" "/api/Gebruiker/DeleteGebruiker/jonas.vandriessche@gmail.com" => 204 (b9f40507)
+2023-12-28T10:32:44.5018451+01:00 0HN07GUA3J90F:0000000D [INF] Request "DELETE" "/api/Gebruiker/DeleteGebruiker/jonas.vandriessche@gmail.com" => 204 (b9f40507)
+2023-12-28T10:32:44.5018615+01:00 0HN07GUA3J90F:0000000D [INF] Request "DELETE" "/api/Gebruiker/DeleteGebruiker/jonas.vandriessche@gmail.com" => 204 (b9f40507)
+2023-12-28T10:32:44.5018758+01:00 0HN07GUA3J90F:0000000D [INF] Request "DELETE" "/api/Gebruiker/DeleteGebruiker/jonas.vandriessche@gmail.com" => 204 (b9f40507)
+2023-12-28T10:32:44.5018851+01:00 0HN07GUA3J90F:0000000D [INF] Request "DELETE" "/api/Gebruiker/DeleteGebruiker/jonas.vandriessche@gmail.com" => 204 (b9f40507)
+2023-12-28T10:32:44.5018971+01:00 0HN07GUA3J90F:0000000D [INF] Request "DELETE" "/api/Gebruiker/DeleteGebruiker/jonas.vandriessche@gmail.com" => 204 (b9f40507)
+2023-12-28T10:32:44.5019097+01:00 0HN07GUA3J90F:0000000D [INF] Request "DELETE" "/api/Gebruiker/DeleteGebruiker/jonas.vandriessche@gmail.com" => 204 (b9f40507)
+2023-12-28T10:32:47.8151772+01:00 0HN07GUA3J90F:0000000E [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:47.8152367+01:00 0HN07GUA3J90F:0000000E [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:47.8152686+01:00 0HN07GUA3J90F:0000000E [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:47.8152816+01:00 0HN07GUA3J90F:0000000E [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:47.8152994+01:00 0HN07GUA3J90F:0000000E [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:47.8153129+01:00 0HN07GUA3J90F:0000000E [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:47.8153334+01:00 0HN07GUA3J90F:0000000E [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:47.8153480+01:00 0HN07GUA3J90F:0000000E [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:47.8153806+01:00 0HN07GUA3J90F:0000000E [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:47.8153964+01:00 0HN07GUA3J90F:0000000E [INF] Gebruiker ophalen op basis van e-mail: jonas.vandriessche@gmail.com (ac23bdae)
+2023-12-28T10:32:47.8808074+01:00 0HN07GUA3J90F:0000000E [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jonas.vandriessche@gmail.com (97e2b94e)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T10:32:47.8808645+01:00 0HN07GUA3J90F:0000000E [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jonas.vandriessche@gmail.com (97e2b94e)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T10:32:47.8810151+01:00 0HN07GUA3J90F:0000000E [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jonas.vandriessche@gmail.com (97e2b94e)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T10:32:47.8810309+01:00 0HN07GUA3J90F:0000000E [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jonas.vandriessche@gmail.com (97e2b94e)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T10:32:47.8810492+01:00 0HN07GUA3J90F:0000000E [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jonas.vandriessche@gmail.com (97e2b94e)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T10:32:47.8809224+01:00 0HN07GUA3J90F:0000000E [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jonas.vandriessche@gmail.com (97e2b94e)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T10:32:47.8809073+01:00 0HN07GUA3J90F:0000000E [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jonas.vandriessche@gmail.com (97e2b94e)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T10:32:47.8809410+01:00 0HN07GUA3J90F:0000000E [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jonas.vandriessche@gmail.com (97e2b94e)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T10:32:47.8809564+01:00 0HN07GUA3J90F:0000000E [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jonas.vandriessche@gmail.com (97e2b94e)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T10:32:47.8841612+01:00 0HN07GUA3J90F:0000000E [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 404 (b9f40507)
+2023-12-28T10:32:47.8842437+01:00 0HN07GUA3J90F:0000000E [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 404 (b9f40507)
+2023-12-28T10:32:47.8843216+01:00 0HN07GUA3J90F:0000000E [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 404 (b9f40507)
+2023-12-28T10:32:47.8843392+01:00 0HN07GUA3J90F:0000000E [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 404 (b9f40507)
+2023-12-28T10:32:47.8808809+01:00 0HN07GUA3J90F:0000000E [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jonas.vandriessche@gmail.com (97e2b94e)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T10:32:47.8843507+01:00 0HN07GUA3J90F:0000000E [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 404 (b9f40507)
+2023-12-28T10:32:47.8842908+01:00 0HN07GUA3J90F:0000000E [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 404 (b9f40507)
+2023-12-28T10:32:47.8842821+01:00 0HN07GUA3J90F:0000000E [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 404 (b9f40507)
+2023-12-28T10:32:47.8843041+01:00 0HN07GUA3J90F:0000000E [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 404 (b9f40507)
+2023-12-28T10:32:47.8843131+01:00 0HN07GUA3J90F:0000000E [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 404 (b9f40507)
+2023-12-28T10:32:47.8842724+01:00 0HN07GUA3J90F:0000000E [INF] Request "GET" "/api/Gebruiker/GetGebruikerByEmail/jonas.vandriessche@gmail.com" => 404 (b9f40507)
+2023-12-28T10:33:01.4314659+01:00 0HN07GUA3J90F:0000000F [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:33:01.4315296+01:00 0HN07GUA3J90F:0000000F [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:33:01.4315470+01:00 0HN07GUA3J90F:0000000F [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:33:01.4315662+01:00 0HN07GUA3J90F:0000000F [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:33:01.4315809+01:00 0HN07GUA3J90F:0000000F [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:33:01.4316000+01:00 0HN07GUA3J90F:0000000F [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:33:01.4316146+01:00 0HN07GUA3J90F:0000000F [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:33:01.4316343+01:00 0HN07GUA3J90F:0000000F [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:33:01.4316507+01:00 0HN07GUA3J90F:0000000F [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:33:01.4316780+01:00 0HN07GUA3J90F:0000000F [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:33:01.4317005+01:00 0HN07GUA3J90F:0000000F [INF] Geen reserveringen gevonden voor klantenNr 3 en opgegeven criteria. (d9651e6f)
+2023-12-28T10:33:01.4345157+01:00 0HN07GUA3J90F:0000000F [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:33:01.4345596+01:00 0HN07GUA3J90F:0000000F [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:33:01.4345725+01:00 0HN07GUA3J90F:0000000F [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:33:01.4345959+01:00 0HN07GUA3J90F:0000000F [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:33:01.4346074+01:00 0HN07GUA3J90F:0000000F [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:33:01.4346206+01:00 0HN07GUA3J90F:0000000F [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:33:01.4346382+01:00 0HN07GUA3J90F:0000000F [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:33:01.4346518+01:00 0HN07GUA3J90F:0000000F [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:33:01.4346667+01:00 0HN07GUA3J90F:0000000F [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:33:01.4346865+01:00 0HN07GUA3J90F:0000000F [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)
+2023-12-28T10:33:01.4346986+01:00 0HN07GUA3J90F:0000000F [INF] Request "GET" "/api/Gebruiker/3/Reservaties/GetAllReservaties" => 404 (b9f40507)

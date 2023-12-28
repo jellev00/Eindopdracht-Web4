@@ -1,0 +1,1367 @@
+2023-12-28T11:21:42.1291028+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:21:42.1321230+01:00  [ERR] Fout bij het toevoegen van de gebruiker (c8d32da3)
+Restaurant.API.Exceptions.MapException: MapFromGebruikerDomain
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Mappers.MapFromDomain.MapFromGebruikerDomain(String url, Gebruiker g, ReservatieManager reservatieManager) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 30
+   --- End of inner exception stack trace ---
+   at Restaurant.API.Mappers.MapFromDomain.MapFromGebruikerDomain(String url, Gebruiker g, ReservatieManager reservatieManager) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 38
+   at Restaurant.API.Controllers.GebruikerController.AddGebruiker(GebruikerRESTinputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 46
+2023-12-28T11:22:51.8888900+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:22:51.8920859+01:00  [ERR] Fout bij het toevoegen van de gebruiker (c8d32da3)
+Restaurant.API.Exceptions.MapException: MapFromGebruikerDomain
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Mappers.MapFromDomain.MapFromGebruikerDomain(String url, Gebruiker g, ReservatieManager reservatieManager) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 30
+   --- End of inner exception stack trace ---
+   at Restaurant.API.Mappers.MapFromDomain.MapFromGebruikerDomain(String url, Gebruiker g, ReservatieManager reservatieManager) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 38
+   at Restaurant.API.Controllers.GebruikerController.AddGebruiker(GebruikerRESTinputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 46
+2023-12-28T11:23:31.7629666+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:23:31.7661486+01:00  [ERR] Fout bij het toevoegen van de gebruiker (c8d32da3)
+Restaurant.API.Exceptions.MapException: MapFromGebruikerDomain
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Mappers.MapFromDomain.MapFromGebruikerDomain(String url, Gebruiker g, ReservatieManager reservatieManager) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 30
+   --- End of inner exception stack trace ---
+   at Restaurant.API.Mappers.MapFromDomain.MapFromGebruikerDomain(String url, Gebruiker g, ReservatieManager reservatieManager) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 38
+   at Restaurant.API.Controllers.GebruikerController.AddGebruiker(GebruikerRESTinputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 46
+2023-12-28T11:24:04.6148048+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:24:04.6184401+01:00  [ERR] Fout bij het toevoegen van de gebruiker (c8d32da3)
+Restaurant.API.Exceptions.MapException: MapFromGebruikerDomain
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Mappers.MapFromDomain.MapFromGebruikerDomain(String url, Gebruiker g, ReservatieManager reservatieManager) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 30
+   --- End of inner exception stack trace ---
+   at Restaurant.API.Mappers.MapFromDomain.MapFromGebruikerDomain(String url, Gebruiker g, ReservatieManager reservatieManager) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 38
+   at Restaurant.API.Controllers.GebruikerController.AddGebruiker(GebruikerRESTinputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 46
+2023-12-28T11:25:25.4664757+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:25:25.4699019+01:00  [ERR] Fout bij het toevoegen van de gebruiker (c8d32da3)
+Restaurant.API.Exceptions.MapException: MapFromGebruikerDomain
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Mappers.MapFromDomain.MapFromGebruikerDomain(String url, Gebruiker g, ReservatieManager reservatieManager) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 30
+   --- End of inner exception stack trace ---
+   at Restaurant.API.Mappers.MapFromDomain.MapFromGebruikerDomain(String url, Gebruiker g, ReservatieManager reservatieManager) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 38
+   at Restaurant.API.Controllers.GebruikerController.AddGebruiker(GebruikerRESTinputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 46
+2023-12-28T11:27:04.8004689+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:27:04.8035478+01:00  [ERR] Fout bij het toevoegen van de gebruiker (c8d32da3)
+Restaurant.API.Exceptions.MapException: MapFromGebruikerDomain
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Mappers.MapFromDomain.MapFromGebruikerDomain(String url, Gebruiker g, ReservatieManager reservatieManager) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 30
+   --- End of inner exception stack trace ---
+   at Restaurant.API.Mappers.MapFromDomain.MapFromGebruikerDomain(String url, Gebruiker g, ReservatieManager reservatieManager) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 38
+   at Restaurant.API.Controllers.GebruikerController.AddGebruiker(GebruikerRESTinputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 46
+2023-12-28T11:29:36.0257698+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:30:55.8388853+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:41:41.8389999+01:00  [INF] Gebruiker ophalen op basis van e-mail: nonexistent@example.com (92ab8f06)
+2023-12-28T11:41:41.8506114+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: nonexistent@example.com (0c5f5be7)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:41:41.8587031+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@example.com (c1979923)
+2023-12-28T11:41:41.8588517+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@example.com (af622795)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:41:41.8885245+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:42:55.2334003+01:00  [INF] Gebruiker ophalen op basis van e-mail: nonexistent@example.com (92ab8f06)
+2023-12-28T11:42:55.2436215+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: nonexistent@example.com (0c5f5be7)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:42:55.2506426+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T11:42:55.2508147+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:42:55.2776526+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:44:04.2732103+01:00  [INF] Gebruiker ophalen op basis van e-mail: nonexistent@example.com (92ab8f06)
+2023-12-28T11:44:04.2878787+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@example.com (c1979923)
+2023-12-28T11:44:04.2820749+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: nonexistent@example.com (0c5f5be7)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:44:04.2880178+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@example.com (af622795)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:44:04.3177805+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:47:46.7182717+01:00  [INF] Gebruiker ophalen op basis van e-mail: nonexistent@example.com (92ab8f06)
+2023-12-28T11:47:46.7285340+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: nonexistent@example.com (0c5f5be7)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:47:46.7347454+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@example.com (c1979923)
+2023-12-28T11:47:46.7349328+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@example.com (af622795)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:47:46.7606261+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:48:59.4350846+01:00  [INF] Gebruiker ophalen op basis van e-mail: nonexistent@example.com (92ab8f06)
+2023-12-28T11:48:59.4458308+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: nonexistent@example.com (0c5f5be7)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:48:59.4534644+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T11:48:59.4536817+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:48:59.4795705+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:49:20.4233204+01:00  [INF] Gebruiker ophalen op basis van e-mail: nonexistent@example.com (92ab8f06)
+2023-12-28T11:49:20.4331259+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: nonexistent@example.com (0c5f5be7)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:49:20.4393829+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T11:49:20.4395306+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:49:20.4648220+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:51:14.5104916+01:00  [INF] Gebruiker ophalen op basis van e-mail: nonexistent@example.com (92ab8f06)
+2023-12-28T11:51:14.5208599+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: nonexistent@example.com (0c5f5be7)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:51:14.5282775+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T11:51:14.5284671+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:51:14.5536807+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:52:22.0313560+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T11:52:22.0429195+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:52:22.0668757+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T11:52:22.0670911+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:52:22.0797748+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:52:43.0793276+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T11:52:43.0881396+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:52:43.0936220+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T11:52:43.0937912+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:52:43.1222866+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:54:15.6229674+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T11:54:15.6333010+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:54:15.6394744+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T11:54:15.6396229+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:54:15.6674287+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:57:26.9412253+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T11:57:26.9524140+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:57:26.9620717+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T11:57:26.9667538+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T11:57:26.9643584+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T11:57:26.9673863+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T11:57:26.9719980+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T11:57:26.9721676+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:57:26.9878164+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T11:57:26.9964834+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T11:59:57.0095884+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T11:59:57.0194773+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:59:57.0265226+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T11:59:57.0311476+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T11:59:57.0351612+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T11:59:57.0279520+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T11:59:57.0317339+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T11:59:57.0353636+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T11:59:57.0562773+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T11:59:57.0618295+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T12:00:18.3399919+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T12:00:18.3521797+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:00:18.3612198+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T12:00:18.3659191+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T12:00:18.3642293+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T12:00:18.3662637+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T12:00:18.3684793+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T12:00:18.3693567+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:00:18.3851737+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T12:00:18.3934964+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T12:01:10.0634798+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T12:01:10.0747954+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:01:10.0840606+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T12:01:10.0890802+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T12:01:10.0919109+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T12:01:10.0864863+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T12:01:10.0897645+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T12:01:10.0920534+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:01:10.1178954+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T12:01:10.1256247+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T12:07:33.2160116+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T12:07:33.2305512+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T12:07:33.2470017+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T12:07:33.2511375+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T12:07:33.2597518+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T12:07:33.2605963+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:07:33.2635279+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T12:07:33.2639503+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T12:07:33.2658831+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T12:07:33.2662623+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T12:07:33.2679602+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T12:07:33.2696922+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T12:07:33.2698207+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:07:33.2737148+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T12:07:33.2789067+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T12:40:18.7600787+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T12:40:18.7986512+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T12:40:18.8071928+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T12:40:18.8166878+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T12:40:18.8241755+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:40:18.8265527+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T12:40:18.8287098+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T12:40:18.8268146+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T12:40:18.8290952+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T12:40:18.8307829+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T12:40:18.8323450+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T12:40:18.8324333+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:40:18.8359908+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T12:40:18.8390277+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T12:41:29.2262589+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T12:41:36.6536311+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T12:41:36.6728238+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T12:41:36.6931517+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T12:41:36.6985243+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T12:41:36.7090188+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T12:41:36.7100223+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:41:36.7138878+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T12:41:36.7143702+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T12:41:36.7163186+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T12:41:36.7167322+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T12:41:36.7190164+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T12:41:36.7212153+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T12:41:36.7213311+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:41:36.7256588+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T12:41:36.7296150+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T12:43:16.2170045+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T12:43:16.2395624+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T12:43:16.2581554+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T12:43:16.2646511+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T12:43:16.2892417+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T12:43:16.2898764+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:43:16.2925076+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T12:43:16.2928144+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T12:43:16.2943227+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T12:43:16.2946824+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T12:43:16.2962726+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T12:43:16.2977560+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T12:43:16.2978649+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:43:16.3011931+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T12:43:16.3041864+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T12:44:59.8627790+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T12:44:59.8865794+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T12:44:59.9062124+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T12:44:59.9113411+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T12:44:59.9226452+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T12:44:59.9238072+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:44:59.9272501+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T12:44:59.9278227+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T12:44:59.9297877+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T12:44:59.9301735+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T12:44:59.9325894+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T12:44:59.9345732+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T12:44:59.9347055+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:44:59.9397971+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T12:44:59.9431653+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T12:45:27.2184374+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T12:45:27.2332797+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T12:45:27.2569734+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T12:45:27.2630410+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T12:45:27.2730792+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T12:45:27.2806839+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:45:27.2837566+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T12:45:27.2873572+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T12:45:27.2842386+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T12:45:27.2876547+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T12:45:27.2892309+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T12:45:27.2907322+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T12:45:27.2908428+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:45:27.2950093+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T12:45:27.2983571+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T12:49:40.5466411+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T12:49:40.5590163+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T12:49:40.5781988+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T12:49:40.5842337+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T12:49:40.5958780+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T12:49:40.6014165+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:49:40.6035390+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T12:49:40.6059675+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T12:49:40.6039668+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T12:49:40.6063796+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T12:49:40.6081324+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T12:49:40.6098584+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T12:49:40.6099640+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:49:40.6140357+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T12:49:40.6177126+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T12:52:55.4976408+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T12:52:55.5151629+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T12:52:55.5321044+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T12:52:55.5366552+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T12:52:55.5454341+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T12:52:55.5459275+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:52:55.5489143+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T12:52:55.5494652+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T12:52:55.5511725+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T12:52:55.5514253+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T12:52:55.5529208+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T12:52:55.5544216+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T12:52:55.5545092+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:52:55.5584231+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T12:52:55.5616065+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T12:54:27.9090076+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T12:54:27.9288785+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T12:54:27.9464033+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T12:54:27.9521191+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T12:54:27.9628519+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T12:54:27.9633416+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:54:27.9659149+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T12:54:27.9662467+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T12:54:27.9681312+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T12:54:27.9686856+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T12:54:27.9703463+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T12:54:27.9718182+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T12:54:27.9719219+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:54:27.9760337+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T12:54:27.9799697+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T12:57:52.6077426+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T12:57:52.6282822+01:00  [INF] Reservatie toegevoegd voor klantenNr 1, restaurantId 1 (4412c3bb)
+2023-12-28T12:57:52.6290793+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+Restaurant.API.Exceptions.MapException: MapFromReservatieDomain
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Mappers.MapFromDomain.MapFromReservatieDomain(String url, Reservatie r) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 71
+   --- End of inner exception stack trace ---
+   at Restaurant.API.Mappers.MapFromDomain.MapFromReservatieDomain(String url, Reservatie r) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Mappers\MapFromDomain.cs:line 82
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 150
+2023-12-28T12:57:52.6484119+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T12:57:52.6523620+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T12:57:52.6643749+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T12:57:52.6655110+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:57:52.6678162+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T12:57:52.6682212+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T12:57:52.6706663+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T12:57:52.6713956+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T12:57:52.6730546+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T12:57:52.6746053+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T12:57:52.6747062+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T12:57:52.6795736+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T12:57:52.6828665+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T13:01:08.9894560+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T13:01:09.0121135+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T13:01:09.0264648+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T13:01:09.0313802+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T13:01:09.0394749+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T13:01:09.0398260+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T13:01:09.0419097+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T13:01:09.0422177+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T13:01:09.0439872+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T13:01:09.0443170+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T13:01:09.0465481+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T13:01:09.0480585+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T13:01:09.0481501+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T13:01:09.0517344+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T13:01:09.0551778+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T18:00:55.5580121+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T18:00:55.5431290+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T18:00:55.6370544+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T18:00:55.6508845+01:00  [INF] Geen beschikbare restaurants gevonden voor de opgegeven criteria. Datum: 04/01/2024 18:00:55, Aantalplaatsen: 4 (f9529234)
+2023-12-28T18:00:55.6557704+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T18:00:55.6595398+01:00  [ERR] Fout bij het ophalen van het restaurant met naam SampleRestaurant (8e79781d)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T18:00:55.6643518+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T18:00:55.6672598+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T18:00:55.6676569+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T18:00:55.6697888+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T18:00:55.6700996+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T18:00:55.6730203+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 5678, Keuken: Italian (2d4f77ca)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 5678 of keuken: Italian
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T18:00:55.6746380+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T18:00:55.6751102+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T18:00:55.6761042+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T18:00:55.6776562+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T18:00:55.6793892+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T18:00:55.6795182+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T18:00:55.6824609+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T18:00:55.6838846+01:00  [ERR] Fout bij het ophalen van het restaurant met naam NonExistentRestaurant (68901ae5)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T18:00:55.6848463+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T18:00:55.6865669+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 1234, Keuken: Dutch (4874a3ed)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 1234 of keuken: Dutch
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T18:00:55.6895644+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T18:05:33.2336298+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T18:05:33.2248796+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T18:05:33.2708795+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T18:05:33.2849010+01:00  [INF] Geen beschikbare restaurants gevonden voor de opgegeven criteria. Datum: 04/01/2024 18:05:33, Aantalplaatsen: 4 (c457e56d)
+2023-12-28T18:05:33.2930848+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T18:05:33.2983372+01:00  [ERR] Fout bij het ophalen van het restaurant met naam SampleRestaurant (8e79781d)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T18:05:33.3041947+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T18:05:33.3085960+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T18:05:33.3091165+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T18:05:33.3112526+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T18:05:33.3114339+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T18:05:33.3149230+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 5678, Keuken: Italian (2d4f77ca)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 5678 of keuken: Italian
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T18:05:33.3162909+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T18:05:33.3165232+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T18:05:33.3173266+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T18:05:33.3189257+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T18:05:33.3205764+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T18:05:33.3207165+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T18:05:33.3241313+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T18:05:33.3260460+01:00  [ERR] Fout bij het ophalen van het restaurant met naam NonExistentRestaurant (68901ae5)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T18:05:33.3273141+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T18:05:33.3297563+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 1234, Keuken: Dutch (4874a3ed)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 1234 of keuken: Dutch
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T18:05:33.3325965+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T18:20:38.4935771+01:00  [ERR] Fout bij het ophalen van het restaurant met naam SampleRestaurant (8e79781d)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T18:21:20.8150141+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T18:21:20.8048685+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T18:21:20.8509628+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T18:21:20.8622238+01:00  [INF] Geen beschikbare restaurants gevonden voor de opgegeven criteria. Datum: 04/01/2024 18:21:20, Aantalplaatsen: 4 (d04af41c)
+2023-12-28T18:21:20.8672526+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T18:21:20.8731202+01:00  [ERR] Fout bij het ophalen van het restaurant met naam SampleRestaurant (8e79781d)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T18:21:20.8781948+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T18:21:20.8807401+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T18:21:20.8812848+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T18:21:20.8833817+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T18:21:20.8836348+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T18:21:20.8864632+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 5678, Keuken: Italian (2d4f77ca)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 5678 of keuken: Italian
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T18:21:20.8880614+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T18:21:20.8883309+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T18:21:20.8891404+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T18:21:20.8905785+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T18:21:20.8926128+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T18:21:20.8927743+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T18:21:20.8959193+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T18:21:20.8973302+01:00  [ERR] Fout bij het ophalen van het restaurant met naam NonExistentRestaurant (68901ae5)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T18:21:20.8983027+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T18:21:20.9003130+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 1234, Keuken: Dutch (4874a3ed)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 1234 of keuken: Dutch
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T18:21:20.9036552+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T18:21:48.2352400+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T18:21:48.2438841+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T18:21:48.2726814+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T18:21:48.2859288+01:00  [INF] Geen beschikbare restaurants gevonden voor de opgegeven criteria. Datum: 04/01/2024 18:21:48, Aantalplaatsen: 4 (1d1d2256)
+2023-12-28T18:21:48.2912553+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T18:21:48.2957151+01:00  [ERR] Fout bij het ophalen van het restaurant met naam Le Comptoir (e9e5d1c8)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T18:21:48.3019457+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T18:21:48.3048521+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T18:21:48.3055244+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T18:21:48.3082939+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T18:21:48.3086052+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T18:21:48.3116111+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 5678, Keuken: Italian (2d4f77ca)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 5678 of keuken: Italian
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T18:21:48.3135967+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T18:21:48.3138991+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T18:21:48.3149461+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T18:21:48.3168728+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T18:21:48.3184835+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T18:21:48.3185897+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T18:21:48.3224852+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T18:21:48.3242473+01:00  [ERR] Fout bij het ophalen van het restaurant met naam NonExistentRestaurant (68901ae5)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T18:21:48.3254097+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T18:21:48.3273943+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 1234, Keuken: Dutch (4874a3ed)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 1234 of keuken: Dutch
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T18:21:48.3321616+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T19:15:55.6994049+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:15:55.6864553+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T19:15:55.7709711+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T19:15:55.7835541+01:00  [INF] Geen beschikbare restaurants gevonden voor de opgegeven criteria. Datum: 04/01/2024 19:15:55, Aantalplaatsen: 4 (ecfcf6ee)
+2023-12-28T19:15:55.7882659+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T19:15:55.7938165+01:00  [ERR] Fout bij het ophalen van het restaurant met naam Le Comptoir (e9e5d1c8)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:15:55.7980131+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T19:15:55.8006348+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T19:15:55.8014506+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:15:55.8033396+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T19:15:55.8034703+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T19:15:55.8057718+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 5678, Keuken: Italian (2d4f77ca)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 5678 of keuken: Italian
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:15:55.8072729+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T19:15:55.8076021+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T19:15:55.8087004+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T19:15:55.8104053+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T19:15:55.8117488+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T19:15:55.8118433+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:15:55.8144748+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T19:15:55.8157927+01:00  [ERR] Fout bij het ophalen van het restaurant met naam NonExistentRestaurant (68901ae5)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:15:55.8167401+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:15:55.8188818+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 1234, Keuken: Dutch (4874a3ed)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 1234 of keuken: Dutch
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:15:55.8216218+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T19:16:52.1725227+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T19:16:52.1824202+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:16:52.2158512+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T19:16:52.2283818+01:00  [INF] Geen beschikbare restaurants gevonden voor de opgegeven criteria. Datum: 04/01/2024 19:16:52, Aantalplaatsen: 4 (54018d79)
+2023-12-28T19:16:52.2332487+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T19:16:52.2373884+01:00  [ERR] Fout bij het ophalen van het restaurant met naam Le Comptoir (e9e5d1c8)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:16:52.2432594+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T19:16:52.2462296+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T19:16:52.2468770+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:16:52.2489860+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T19:16:52.2491828+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T19:16:52.2526180+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 5678, Keuken: Italian (2d4f77ca)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 5678 of keuken: Italian
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:16:52.2541616+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T19:16:52.2543991+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T19:16:52.2553127+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T19:16:52.2573304+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T19:16:52.2592188+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T19:16:52.2593390+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:16:52.2632511+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T19:16:52.2649674+01:00  [ERR] Fout bij het ophalen van het restaurant met naam NonExistentRestaurant (68901ae5)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:16:52.2661122+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:16:52.2696160+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 1234, Keuken: Dutch (4874a3ed)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 1234 of keuken: Dutch
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:16:52.2732421+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T19:30:06.3854918+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:30:06.3765865+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T19:30:06.4200886+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T19:30:06.4363294+01:00  [INF] Geen beschikbare restaurants gevonden voor de opgegeven criteria. Datum: 04/01/2024 19:30:06, Aantalplaatsen: 4 (ed1ca32e)
+2023-12-28T19:30:06.4440024+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T19:30:06.4564169+01:00  [ERR] Fout bij het ophalen van het restaurant met naam Le Comptoir (e9e5d1c8)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:30:06.4607228+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T19:30:06.4631512+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T19:30:06.4636089+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:30:06.4653335+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T19:30:06.4654387+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T19:30:06.4681184+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 5678, Keuken: Italian (2d4f77ca)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 5678 of keuken: Italian
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:30:06.4698120+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T19:30:06.4701052+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T19:30:06.4710781+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T19:30:06.4727467+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T19:30:06.4743330+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T19:30:06.4744513+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:30:06.4772781+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T19:30:06.4789219+01:00  [ERR] Fout bij het ophalen van het restaurant met naam NonExistentRestaurant (68901ae5)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:30:06.4801532+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:30:06.4818416+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 1234, Keuken: Dutch (4874a3ed)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 1234 of keuken: Dutch
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:30:06.4855289+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T19:48:46.0714915+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:48:46.0605329+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T19:48:46.1522545+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T19:48:46.1582929+01:00  [INF] Geen beschikbare restaurants gevonden voor de opgegeven criteria. Datum: 04/01/2024 19:48:46, Aantalplaatsen: 4 (09924e6d)
+2023-12-28T19:48:46.1623705+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T19:48:46.1653726+01:00  [ERR] Fout bij het ophalen van het restaurant met naam Le Comptoir (e9e5d1c8)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:48:46.1682017+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T19:48:46.1702537+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T19:48:46.1706643+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:48:46.1729522+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T19:48:46.1735649+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T19:48:46.1766040+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 5678, Keuken: Italian (2d4f77ca)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 5678 of keuken: Italian
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:48:46.1781691+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T19:48:46.1784483+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T19:48:46.1792478+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T19:48:46.1805153+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T19:48:46.1823219+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T19:48:46.1824438+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:48:46.1852711+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T19:48:46.1864614+01:00  [ERR] Fout bij het ophalen van het restaurant met naam NonExistentRestaurant (68901ae5)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:48:46.1872927+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:48:46.1887684+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 1234, Keuken: Dutch (4874a3ed)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 1234 of keuken: Dutch
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:48:46.1937289+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T19:52:41.0757778+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T19:52:41.0854894+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:52:41.1157501+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T19:52:41.1267027+01:00  [INF] Geen beschikbare restaurants gevonden voor de opgegeven criteria. Datum: 04/01/2024 19:52:41, Aantalplaatsen: 4 (56b37959)
+2023-12-28T19:52:41.1310119+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T19:52:41.1346025+01:00  [ERR] Fout bij het ophalen van het restaurant met naam Le Comptoir (e9e5d1c8)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:52:41.1375069+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T19:52:41.1399639+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T19:52:41.1405136+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:52:41.1422433+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T19:52:41.1423457+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T19:52:41.1442626+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 5678, Keuken: Italian (2d4f77ca)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 5678 of keuken: Italian
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:52:41.1454655+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T19:52:41.1456603+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T19:52:41.1463793+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T19:52:41.1477431+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T19:52:41.1491150+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T19:52:41.1492038+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:52:41.1517482+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T19:52:41.1531110+01:00  [ERR] Fout bij het ophalen van het restaurant met naam NonExistentRestaurant (68901ae5)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:52:41.1540698+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:52:41.1561363+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 1234, Keuken: Dutch (4874a3ed)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 1234 of keuken: Dutch
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:52:41.1591152+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T19:55:48.2110300+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:55:48.2013871+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T19:55:48.2422878+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T19:55:48.2521321+01:00  [INF] Geen beschikbare restaurants gevonden voor de opgegeven criteria. Datum: 04/01/2024 19:55:48, Aantalplaatsen: 4 (2de08602)
+2023-12-28T19:55:48.2581646+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T19:55:48.2614073+01:00  [ERR] Fout bij het ophalen van het restaurant met naam Le Comptoir (e9e5d1c8)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:55:48.2660328+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T19:55:48.2692371+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T19:55:48.2722976+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:55:48.2749753+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T19:55:48.2752905+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T19:55:48.2786971+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 5678, Keuken: Italian (2d4f77ca)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 5678 of keuken: Italian
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:55:48.2806855+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T19:55:48.2813701+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T19:55:48.2825970+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T19:55:48.2845369+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T19:55:48.2862805+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T19:55:48.2864113+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:55:48.2904207+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T19:55:48.2919064+01:00  [ERR] Fout bij het ophalen van het restaurant met naam NonExistentRestaurant (68901ae5)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:55:48.2928941+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:55:48.2954536+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 1234, Keuken: Dutch (4874a3ed)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 1234 of keuken: Dutch
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:55:48.3028154+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T19:58:13.1487240+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:58:13.1402220+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T19:58:13.1964901+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T19:58:13.2032648+01:00  [INF] Geen beschikbare restaurants gevonden voor de opgegeven criteria. Datum: 04/01/2024 19:58:13, Aantalplaatsen: 4 (85ea993f)
+2023-12-28T19:58:13.2103883+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T19:58:13.2146377+01:00  [ERR] Fout bij het ophalen van het restaurant met naam Le Comptoir (e9e5d1c8)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:58:13.2175391+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T19:58:13.2196787+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T19:58:13.2201604+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:58:13.2223198+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T19:58:13.2224911+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T19:58:13.2251981+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 5678, Keuken: Italian (2d4f77ca)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 5678 of keuken: Italian
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:58:13.2275224+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T19:58:13.2277967+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T19:58:13.2287718+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T19:58:13.2304254+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T19:58:13.2319992+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T19:58:13.2321265+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T19:58:13.2349749+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T19:58:13.2387963+01:00  [ERR] Fout bij het ophalen van het restaurant met naam NonExistentRestaurant (68901ae5)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T19:58:13.2419711+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T19:58:13.2451838+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 1234, Keuken: Dutch (4874a3ed)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 1234 of keuken: Dutch
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T19:58:13.2505995+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)
+2023-12-28T20:42:44.2486666+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T20:42:44.2354123+01:00  [WRN] Reservatie met nummer 1 niet gevonden voor verwijdering (1bf4b7fd)
+2023-12-28T20:42:44.3110794+01:00  [ERR] Fout bij het toevoegen van de reservatie (231f7445)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Restaurant.API.Controllers.GebruikerController.AddReservatie(Int32 klantenNr, Int32 restaurantId, ReservatieRESTInputDTO inputDTO) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 137
+2023-12-28T20:42:44.3179595+01:00  [INF] Geen beschikbare restaurants gevonden voor de opgegeven criteria. Datum: 04/01/2024 20:42:44, Aantalplaatsen: 4 (7b90ab38)
+2023-12-28T20:42:44.3231087+01:00  [INF] Geen reserveringen gevonden voor klantenNr 1 en opgegeven criteria. (475682a6)
+2023-12-28T20:42:44.3270845+01:00  [ERR] Fout bij het ophalen van het restaurant met naam Le Comptoir (e9e5d1c8)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T20:42:44.3308374+01:00  [INF] Reservatie bijgewerkt voor klantenNr 1, restaurantId 1, reservatieNr 1 (6b5b2158)
+2023-12-28T20:42:44.3332884+01:00  [INF] Gebruiker ophalen op basis van e-mail: test@test.com (16f7f6a8)
+2023-12-28T20:42:44.3370396+01:00  [INF] Gebruiker verwijderen met e-mail: nonexistent@example.com (349d9ac0)
+2023-12-28T20:42:44.3408952+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 5678, Keuken: Italian (2d4f77ca)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 5678 of keuken: Italian
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T20:42:44.3426296+01:00  [INF] Gebruiker verwijderen met e-mail: john.doe@example.com (fecd2679)
+2023-12-28T20:42:44.3436113+01:00  [ERR] Fout bij het invullen van de datum (a8b7f20d)
+2023-12-28T20:42:44.3447434+01:00  [INF] Reservatie met nummer 1 succesvol geannuleerd (43044d92)
+2023-12-28T20:42:44.3460902+01:00  [INF] Gebruiker ophalen op basis van e-mail: jelle.vandriessche@gmail.com (d222ee6f)
+2023-12-28T20:42:44.3353849+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: test@test.com (e9960f7f)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T20:42:44.3371983+01:00  [WRN] Gebruiker met e-mail nonexistent@example.com niet gevonden voor verwijdering (ec6b765c)
+2023-12-28T20:42:44.3429013+01:00  [INF] Gebruiker met e-mail john.doe@example.com succesvol verwijderd (f8507860)
+2023-12-28T20:42:44.3462119+01:00  [ERR] Fout bij het ophalen van de gebruiker op basis van e-mail: jelle.vandriessche@gmail.com (283d8951)
+Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail
+ ---> Restaurant.BL.Exceptions.GebruikerManagerException: GetGebruikerByEmail - De gebruiker bestaat niet
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 79
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.GebruikerManager.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\GebruikerManager.cs:line 86
+   at Restaurant.API.Controllers.GebruikerController.GetGebruikerByEmail(String email) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 61
+2023-12-28T20:42:44.3493311+01:00  [INF] Gebruiker met klantenNr 1 succesvol bijgewerkt (a94a1b80)
+2023-12-28T20:42:44.3506872+01:00  [ERR] Fout bij het ophalen van het restaurant met naam NonExistentRestaurant (68901ae5)
+Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: GetRestaurantByNaam - Het Restaurant bestaat niet
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 103
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 110
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByNaam(String naam) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 237
+2023-12-28T20:42:44.3515864+01:00  [INF] Geen restaurants gevonden. (50efdad2)
+2023-12-28T20:42:44.3532780+01:00  [ERR] Fout bij het ophalen van restaurants voor criteria. Postcode: 1234, Keuken: Dutch (4874a3ed)
+Restaurant.BL.Exceptions.RestaurantManagerException: SearchRestaurants
+ ---> Restaurant.BL.Exceptions.RestaurantManagerException: Geen restaurants gevonden met postcode: 1234 of keuken: Dutch
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 121
+   --- End of inner exception stack trace ---
+   at Restaurant.BL.Managers.RestaurantManager.SearchRestaurants(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.BL\Managers\RestaurantManager.cs:line 128
+   at Restaurant.API.Controllers.GebruikerController.GetRestaurantByPostcodeOrKeuken(String postcode, String keuken) in D:\Hogent\Semester_3\Web_4\EindOpdracht\Eindopdracht-Web4\Restaurant.API\Controllers\GebruikerController.cs:line 253
+2023-12-28T20:42:44.3561233+01:00  [INF] Gebruiker succesvol toegevoegd (aabba41a)

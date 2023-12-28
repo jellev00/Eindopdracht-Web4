@@ -16,15 +16,15 @@ namespace Restaurant.API.Controllers
     {
         private string URL = "http://localhost:5212/api/Restaurant";
 
-        private readonly ILogger<RestaurantController> _logger;
+        private readonly ILogger _logger;
         private ReservatieManager _reservatieManager;
         private RestaurantManager _restaurantManager;
 
-        public RestaurantController(RestaurantManager restaurantManager, ReservatieManager reservatieManager, ILogger<RestaurantController> logger)
+        public RestaurantController(RestaurantManager restaurantManager, ReservatieManager reservatieManager, ILoggerFactory loggerFactory)
         {
             _restaurantManager = restaurantManager;
             _reservatieManager = reservatieManager;
-            _logger = logger;
+            _logger = loggerFactory.AddFile("logs/RestaurantLogs.txt").CreateLogger("Restaurant");
         }
 
         // Restaurant
@@ -86,7 +86,7 @@ namespace Restaurant.API.Controllers
         }
 
         [HttpPut("UpdateRestaurant/{Id}")]
-        public ActionResult<BL.Models.Restaurant> UpdateGebruiker(int Id, [FromBody] RestaurantRESTInputDTO rI)
+        public ActionResult<BL.Models.Restaurant> UpdateRestaurant(int Id, [FromBody] RestaurantRESTInputDTO rI)
         {
             try
             {
@@ -108,7 +108,7 @@ namespace Restaurant.API.Controllers
         }
 
         [HttpDelete("DeleteRestaurant/{naam}")]
-        public ActionResult DeleteGebruiker(string naam)
+        public ActionResult DeleteRestaurant(string naam)
         {
             try
             {

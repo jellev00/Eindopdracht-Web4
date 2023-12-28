@@ -17,7 +17,7 @@ namespace Restaurant.API.Mappers
             {
                 string reservatiesURL;
 
-                if (g.Reservatie.Count == 0)
+                if (g.Reservatie == null || g.Reservatie.Count == 0)
                 {
                     reservatiesURL = null;
                 } else
