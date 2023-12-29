@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Restaurant.API.Exceptions;
 using Restaurant.API.Mappers;
 using Restaurant.API.Models.Input;
 using Restaurant.API.Models.Output;
@@ -134,11 +135,18 @@ namespace Restaurant.API.Controllers
                 
                 Reservatie r = null;
 
-                foreach (Reservatie reservation in reservaties)
+                if (reservaties == null)
                 {
-                    if (reservation.RestaurantInfo.Id == restaurantId)
+                    r = reservatie;
+                }
+                else
+                {
+                    foreach (Reservatie reservation in reservaties)
                     {
-                        r = reservation;
+                        if (reservation.RestaurantInfo.Id == restaurantId)
+                        {
+                            r = reservation;
+                        }
                     }
                 }
 

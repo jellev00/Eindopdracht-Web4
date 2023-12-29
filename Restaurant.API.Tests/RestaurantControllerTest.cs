@@ -11,6 +11,7 @@ using Restaurant.BL.Exceptions;
 using Restaurant.Gebruiker.API.Models.Input;
 using Restaurant.Gebruiker.API.Models.Output;
 using Restaurant.BL.Models;
+using Restaurant.EF.Models;
 
 namespace Restaurant.API.Tests
 {
@@ -60,12 +61,15 @@ namespace Restaurant.API.Tests
         [Fact]
         public void GetRestaurantByNaam_ReturnsOk()
         {
-            // Arrange
-            var restaurantNaam = "TestRestaurant";
-            var restaurant = new BL.Models.Restaurant(restaurantNaam, new Locatie("1234", "Test City", "Test Street", "42"), "Test Cuisine", new Contactgegevens("1234567890", "test@example.com"), true);
+            var restaurantNaam = "Hof van Cleve";
 
-            _restaurantRepo.Setup(r => r.GetRestaurantByNaam(restaurantNaam))
-                           .Returns(restaurant);
+            BL.Models.Restaurant restaurant1 = new BL.Models.Restaurant("Pasta Piccaso", new Locatie("9000", "Oudenaarde", "Nederstraat", "50"), "italiaans", new Contactgegevens("0487472075", "pasta-piccaso@info.be"), true);
+            BL.Models.Restaurant restaurant2 = new BL.Models.Restaurant("Hof van Cleve", new Locatie("9770", "Kruisem", "Riemegemstraat", "1"), "culinaire", new Contactgegevens("093835848", "Hof-van-Cleve@info.be"), true);
+            BL.Models.Restaurant restaurant3 = new BL.Models.Restaurant("Le Comptoir", new Locatie("1000", "Brussels", "Grand Place", "1"), "French cuisine", new Contactgegevens("0123456789", "info@restaurant-brussels.com"), true);
+
+            var restaurants = new List<BL.Models.Restaurant> { restaurant1, restaurant2, restaurant3 };
+
+            _restaurantRepo.Setup(r => r.GetRestaurantByNaam(restaurantNaam)).Returns(restaurant2);
 
             // Act
             var result = _restaurantController.GetRestaurantByNaam(restaurantNaam);
@@ -146,14 +150,16 @@ namespace Restaurant.API.Tests
         public void AddTafel_ValidInput_ReturnsCreatedAtAction()
         {
             // Arrange
-            var restaurantName = "TestRestaurant";
+            var restaurantName = "Hof van Cleve";
             var inputDTO = new TafelRESTInputDTO(4);
 
+            BL.Models.Restaurant restaurant = new BL.Models.Restaurant("Hof van Cleve", new Locatie("9770", "Kruisem", "Riemegemstraat", "1"), "culinaire", new Contactgegevens("093835848", "Hof-van-Cleve@info.be"), true);
+
             _restaurantRepo.Setup(r => r.GetRestaurantByNaam(restaurantName))
-                           .Returns(new BL.Models.Restaurant { Id = 1 }); // Provide a sample restaurant for testing
+               .Returns(restaurant);
 
             _restaurantRepo.Setup(r => r.AddTafel(It.IsAny<int>(), It.IsAny<Tafel>()))
-                           .Returns((int restaurantId, Tafel tafel) => tafel);
+               .Returns((new Tafel(4, restaurant)));
 
             // Act
             var result = _restaurantController.AddTafel(restaurantName, inputDTO);
@@ -169,14 +175,19 @@ namespace Restaurant.API.Tests
         {
             // Arrange
             var restaurantId = 1;
-            var tafels = new List<Tafel>
-            {
-                new Tafel(4),
-                new Tafel(2)
-            };
 
-            _restaurantRepo.Setup(r => r.GetTafels(restaurantId))
-                           .Returns(tafels);
+            BL.Models.Restaurant restaurant = new BL.Models.Restaurant("Hof van Cleve", new Locatie("9770", "Kruisem", "Riemegemstraat", "1"), "culinaire", new Contactgegevens("093835848", "Hof-van-Cleve@info.be"), true);
+
+            Tafel tafel1 = new Tafel(2, restaurant);
+            Tafel tafel2 = new Tafel(3, restaurant);
+            Tafel tafel3 = new Tafel(4, restaurant);
+            Tafel tafel4 = new Tafel(6, restaurant);
+            Tafel tafel5 = new Tafel(8, restaurant);
+            Tafel tafel6 = new Tafel(12, restaurant);
+            
+            var tafels = new List<Tafel> { tafel1, tafel2, tafel3, tafel4, tafel5, tafel6 };
+
+            _restaurantRepo.Setup(r => r.GetTafels(restaurantId)).Returns(tafels);
 
             // Act
             var result = _restaurantController.GetTafels(restaurantId);
@@ -242,10 +253,18 @@ namespace Restaurant.API.Tests
             // Arrange
             var restaurantName = "TestRestaurant";
             var beginDatum = DateTime.Now.AddDays(5);
-            var eindDatum = DateTime.Now.AddDays(10);
+            var eindDatum = DateTime.Now;
 
-            _reservatieRepo.Setup(r => r.GetAllReservationsByRestauranNaam(restaurantName, beginDatum, eindDatum))
-                           .Returns(new List<Reservatie>()); // Provide a sample list of reservations for testing
+            BL.Models.Restaurant restaurant = new BL.Models.Restaurant("Hof van Cleve", new Locatie("9770", "Kruisem", "Riemegemstraat", "1"), "culinaire", new Contactgegevens("093835848", "Hof-van-Cleve@info.be"), true);
+
+            BL.Models.Gebruiker gebruiker = new BL.Models.Gebruiker("Jelle", "jelle.vandriessche@gmail.com", "0472533243", new Locatie("9750", "Kruisem", "Toekomststraat", "16"));
+
+            Reservatie reservatie1 = new Reservatie(restaurant, gebruiker, 4, new DateTime(2023, 12, 25, 18, 30, 0), 3);
+            Reservatie reservatie2 = new Reservatie(restaurant, gebruiker, 2, new DateTime(2023, 12, 30, 18, 30, 0), 7);
+
+            _reservatieRepo.Setup(r => r.GetAllReservationsByRestauranNaam(It.IsAny<string>(), It.IsAny<DateTime?>(), It.IsAny<DateTime?>()))
+                .Returns(new List<BL.Models.Reservatie> { reservatie1, reservatie2 });
+
 
             // Act
             var result = _restaurantController.GetAllReservaties(restaurantName, beginDatum, eindDatum);

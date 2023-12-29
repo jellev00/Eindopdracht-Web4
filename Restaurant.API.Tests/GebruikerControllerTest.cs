@@ -11,6 +11,7 @@ using Restaurant.BL.Exceptions;
 using Restaurant.Gebruiker.API.Models.Input;
 using Restaurant.Gebruiker.API.Models.Output;
 using Restaurant.BL.Models;
+using Restaurant.EF.Models;
 
 namespace Restaurant.API.Tests
 {
@@ -69,10 +70,17 @@ namespace Restaurant.API.Tests
             // Arrange
             var email = "jelle.vandriessche@gmail.com";
 
+            BL.Models.Gebruiker gebruiker = new BL.Models.Gebruiker("Jelle", "jelle.vandriessche@gmail.com", "0472533243", new Locatie("9750", "Kruisem", "Toekomststraat", "16"));
+            GebruikerRESTinputDTO gebruikerIn = new GebruikerRESTinputDTO("Jelle", "jelle.vandriessche@gmail.com", "0472533243", new Locatie("9750", "Kruisem", "Toekomststraat", "16"));
+
+            _gebruikerRepo.Setup(g => g.AddGebruiker(gebruiker))
+                .Returns(gebruiker);
+
             _gebruikerRepo.Setup(g => g.GetGebruikerByEmail(email))
-                .Returns(new BL.Models.Gebruiker());
+                .Returns(new BL.Models.Gebruiker("Jelle", "jelle.vandriessche@gmail.com", "0472533243", new Locatie("9750", "Kruisem", "Toekomststraat", "16")));
 
             // Act
+            var testG = _gebruikerController.AddGebruiker(gebruikerIn);
             var result = _gebruikerController.GetGebruikerByEmail(email);
 
             // Assert
@@ -153,9 +161,12 @@ namespace Restaurant.API.Tests
             var restaurantId = 1;
             var inputDTO = new ReservatieRESTInputDTO(4, DateTime.Now.AddDays(2));
 
+            BL.Models.Restaurant restaurant = new BL.Models.Restaurant("Hof van Cleve", new Locatie("9770", "Kruisem", "Riemegemstraat", "1"), "culinaire", new Contactgegevens("093835848", "Hof-van-Cleve@info.be"), true);
+            BL.Models.Gebruiker gebruiker = new BL.Models.Gebruiker("Jelle", "jelle.vandriessche@gmail.com", "0472533243", new Locatie("9750", "Kruisem", "Toekomststraat", "16"));
+
             _gebruikerRepo.Setup(g => g.ExistsGebruiker(It.IsAny<string>())).Returns((string e) => false);
             _reservatieRepo.Setup(r => r.AddReservatie(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<BL.Models.Reservatie>()))
-                           .Returns(new BL.Models.Reservatie());
+                           .Returns(new BL.Models.Reservatie(restaurant, gebruiker, 4, DateTime.Now.AddDays(2), 4));
 
             // Act
             var result = _gebruikerController.AddReservatie(klantenNr, restaurantId, inputDTO);
@@ -174,8 +185,16 @@ namespace Restaurant.API.Tests
             var beginDatum = DateTime.Now.AddDays(5);
             var eindDatum = DateTime.Now;
 
+            BL.Models.Restaurant restaurant = new BL.Models.Restaurant("Hof van Cleve", new Locatie("9770", "Kruisem", "Riemegemstraat", "1"), "culinaire", new Contactgegevens("093835848", "Hof-van-Cleve@info.be"), true);
+
+            BL.Models.Gebruiker gebruiker = new BL.Models.Gebruiker("Jelle", "jelle.vandriessche@gmail.com", "0472533243", new Locatie("9750", "Kruisem", "Toekomststraat", "16"));
+
+            Reservatie reservatie1 = new Reservatie(restaurant, gebruiker, 4, new DateTime(2023, 12, 25, 18, 30, 0), 3);
+            Reservatie reservatie2 = new Reservatie(restaurant, gebruiker, 2, new DateTime(2023, 12, 30, 18, 30, 0), 7);
+
             _reservatieRepo.Setup(r => r.GetAllReservationsByKlantenNr(It.IsAny<int>(), It.IsAny<DateTime?>(), It.IsAny<DateTime?>()))
-                .Returns(new List<BL.Models.Reservatie>());
+                .Returns(new List<BL.Models.Reservatie> { reservatie1, reservatie2 });
+
 
             // Act
             var result = _gebruikerController.GetAllReservaties(klantenNr, beginDatum, eindDatum);
@@ -235,18 +254,19 @@ namespace Restaurant.API.Tests
             Assert.IsType<NotFoundResult>(result);
         }
 
-        // Restaurant
+        // Restaurant Tests
 
         [Fact]
         public void GetRestaurantByNaam_ReturnsOk()
         {
             // Arrange
             var restaurantNaam = "Le Comptoir";
-            Locatie locatie = new Locatie("1000", "Brussels", "Grand Place", "1");
-            Contactgegevens contactgegevens = new Contactgegevens("0123456789", "info@restaurant-brussels.com");
-            var restaurant = new BL.Models.Restaurant("Le Comptoir", locatie, "French cuisine", contactgegevens, true);
 
-            _restaurantRepo.Setup(r => r.GetRestaurantByNaam(restaurantNaam)).Returns(restaurant);
+            BL.Models.Restaurant restaurant1 = new BL.Models.Restaurant("Pasta Piccaso", new Locatie("9000", "Oudenaarde", "Nederstraat", "50"), "italiaans", new Contactgegevens("0487472075", "pasta-piccaso@info.be"), true);
+            BL.Models.Restaurant restaurant2 = new BL.Models.Restaurant("Hof van Cleve", new Locatie("9770", "Kruisem", "Riemegemstraat", "1"), "culinaire", new Contactgegevens("093835848", "Hof-van-Cleve@info.be"), true);
+            BL.Models.Restaurant restaurant3 = new BL.Models.Restaurant("Le Comptoir", new Locatie("1000", "Brussels", "Grand Place", "1"), "French cuisine", new Contactgegevens("0123456789", "info@restaurant-brussels.com"), true);
+
+            _restaurantRepo.Setup(r => r.GetRestaurantByNaam(restaurantNaam)).Returns(restaurant3);
 
             // Act
             var result = _gebruikerController.GetRestaurantByNaam(restaurantNaam);
@@ -274,9 +294,14 @@ namespace Restaurant.API.Tests
         public void GetRestaurantByPostcodeOrKeuken_ReturnsOk()
         {
             // Arrange
-            var postcode = "1234";
-            var keuken = "Dutch";
-            var restaurants = new List<BL.Models.Restaurant> { /* Initialize list of restaurants */ };
+            var postcode = "9770";
+            var keuken = "culinaire";
+
+            BL.Models.Restaurant restaurant1 = new BL.Models.Restaurant("Pasta Piccaso", new Locatie("9000", "Oudenaarde", "Nederstraat", "50"), "italiaans", new Contactgegevens("0487472075", "pasta-piccaso@info.be"), true);
+            BL.Models.Restaurant restaurant2 = new BL.Models.Restaurant("Hof van Cleve", new Locatie("9770", "Kruisem", "Riemegemstraat", "1"), "culinaire", new Contactgegevens("093835848", "Hof-van-Cleve@info.be"), true);
+            BL.Models.Restaurant restaurant3 = new BL.Models.Restaurant("Le Comptoir", new Locatie("1000", "Brussels", "Grand Place", "1"), "French cuisine", new Contactgegevens("0123456789", "info@restaurant-brussels.com"), true);
+
+            var restaurants = new List<BL.Models.Restaurant> { restaurant1, restaurant2, restaurant3 };
 
             _restaurantRepo.Setup(r => r.SearchRestaurants(postcode, keuken)).Returns(restaurants);
 
@@ -307,7 +332,10 @@ namespace Restaurant.API.Tests
         public void GetAllRestaurants_ReturnsOk()
         {
             // Arrange
-            var restaurants = new List<BL.Models.Restaurant> { /* Initialize list of restaurants */ };
+            BL.Models.Restaurant restaurant1 = new BL.Models.Restaurant("Pasta Piccaso", new Locatie("9000", "Oudenaarde", "Nederstraat", "50"), "italiaans", new Contactgegevens("0487472075", "pasta-piccaso@info.be"), true);
+            BL.Models.Restaurant restaurant2 = new BL.Models.Restaurant("Hof van Cleve", new Locatie("9770", "Kruisem", "Riemegemstraat", "1"), "culinaire", new Contactgegevens("093835848", "Hof-van-Cleve@info.be"), true);
+
+            var restaurants = new List<BL.Models.Restaurant> { restaurant1, restaurant2 };
 
             _restaurantRepo.Setup(r => r.GetAllRestaurants()).Returns(restaurants);
 
@@ -337,7 +365,10 @@ namespace Restaurant.API.Tests
             // Arrange
             var datum = DateTime.Now.AddDays(7);
             var aantalPlaatsen = 4;
-            var availableRestaurants = new List<BL.Models.Restaurant> { /* Initialize list of available restaurants */ };
+            BL.Models.Restaurant restaurant1 = new BL.Models.Restaurant("Pasta Piccaso", new Locatie("9000", "Oudenaarde", "Nederstraat", "50"), "italiaans", new Contactgegevens("0487472075", "pasta-piccaso@info.be"), true);
+            BL.Models.Restaurant restaurant2 = new BL.Models.Restaurant("Hof van Cleve", new Locatie("9770", "Kruisem", "Riemegemstraat", "1"), "culinaire", new Contactgegevens("093835848", "Hof-van-Cleve@info.be"), true);
+
+            var availableRestaurants = new List<BL.Models.Restaurant> { restaurant1, restaurant2 };
 
             _restaurantRepo.Setup(r => r.GetAvailableRestaurants(datum, aantalPlaatsen)).Returns(availableRestaurants);
 
