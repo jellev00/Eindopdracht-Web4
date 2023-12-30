@@ -41,7 +41,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void AddRestaurant_ValidInput_ReturnsCreatedAtAction()
+        public void AddRestaurant_Test()
         {
             // Arrange
             var inputDTO = new RestaurantRESTInputDTO("New Restaurant", new Locatie("1234", "Test City", "Test Street", "42"), "Test Cuisine", new Contactgegevens("1234567890", "test@example.com"), true);
@@ -59,7 +59,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetRestaurantByNaam_ReturnsOk()
+        public void GetRestaurantByNaam_Test()
         {
             var restaurantNaam = "Hof van Cleve";
 
@@ -79,7 +79,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetAllRestaurants_ReturnsOk()
+        public void GetAllRestaurants_Test()
         {
             // Arrange
             var restaurants = new List<BL.Models.Restaurant>
@@ -99,7 +99,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void UpdateRestaurant_ValidInput_ReturnsOk()
+        public void UpdateRestaurant_Test()
         {
             // Arrange
             var restaurantId = 1;
@@ -117,7 +117,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void DeleteRestaurant_ExistingRestaurant_ReturnsNoContent()
+        public void DeleteRestaurant_RestaurantBestaat_Test()
         {
             // Arrange
             var restaurantNaam = "ExistingRestaurant";
@@ -131,7 +131,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void DeleteRestaurant_NonExistingRestaurant_ReturnsNotFound()
+        public void DeleteRestaurant_RestaurantBestaatNiet_Test()
         {
             // Arrange
             var restaurantNaam = "NonExistingRestaurant";
@@ -147,7 +147,7 @@ namespace Restaurant.API.Tests
         // Tafels
 
         [Fact]
-        public void AddTafel_ValidInput_ReturnsCreatedAtAction()
+        public void AddTafel_Test()
         {
             // Arrange
             var restaurantName = "Hof van Cleve";
@@ -170,8 +170,9 @@ namespace Restaurant.API.Tests
             Assert.IsType<TafelRESTOutputDTO>(createdAtActionResult.Value);
         }
 
+
         [Fact]
-        public void GetTafels_ReturnsOk()
+        public void GetTafels_Test()
         {
             // Arrange
             var restaurantId = 1;
@@ -197,7 +198,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void UpdateTafel_ValidInput_ReturnsOk()
+        public void UpdateTafel_Test()
         {
             // Arrange
             var restaurantId = 1;
@@ -216,7 +217,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void DeleteTafel_ExistingTafel_ReturnsNoContent()
+        public void DeleteTafel_TafelBestaat_Test()
         {
             // Arrange
             var restaurantId = 1;
@@ -231,7 +232,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void DeleteTafel_NonExistingTafel_ReturnsNotFound()
+        public void DeleteTafel_TafelBestaatNiet_Test()
         {
             // Arrange
             var restaurantId = 1;
@@ -248,7 +249,7 @@ namespace Restaurant.API.Tests
         // Reservatie
 
         [Fact]
-        public void GetAllReservaties_ReturnsOk()
+        public void GetAllReservaties_ReservatiesBestaan_Test()
         {
             // Arrange
             var restaurantName = "TestRestaurant";
@@ -274,7 +275,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetAllReservaties_NoReservations_ReturnsNotFound()
+        public void GetAllReservaties_ReservatiesBestaanNiet_Test()
         {
             // Arrange
             var restaurantName = "TestRestaurant";

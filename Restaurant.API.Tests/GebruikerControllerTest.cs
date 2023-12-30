@@ -47,7 +47,7 @@ namespace Restaurant.API.Tests
         // Gebruiker Tests
 
         [Fact]
-        public void AddGebruikerTest()
+        public void AddGebruiker_Test()
         {
             // Arrange
             var inputDTO = new GebruikerRESTinputDTO("John Doe", "john.doe@example.com", "123456789", new BL.Models.Locatie("1234", "City", "Street", "123"));
@@ -65,7 +65,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetGebruikerByEmail_GebruikerBestaan()
+        public void GetGebruikerByEmail_GebruikerBestaan_Test()
         {
             // Arrange
             var email = "jelle.vandriessche@gmail.com";
@@ -88,7 +88,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetGebruikerByEmail_GebruikerBestaatNiet()
+        public void GetGebruikerByEmail_GebruikerBestaatNiet_Test()
         {
             // Arrange
             var email = "test@test.com";
@@ -104,7 +104,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void UpdateGebruiker_ValidInput_ReturnsOk()
+        public void UpdateGebruiker_Test()
         {
             // Arrange
             var klantenNr = 1;
@@ -122,7 +122,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void DeleteGebruiker_ExistingEmail_ReturnsNoContent()
+        public void DeleteGebruiker_EmailBestaat_Test()
         {
             // Arrange
             var email = "john.doe@example.com";
@@ -137,7 +137,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void DeleteGebruiker_NonExistingEmail_ReturnsNotFound()
+        public void DeleteGebruiker_EmailBestaatNiet_Test()
         {
             // Arrange
             var email = "nonexistent@example.com";
@@ -154,7 +154,7 @@ namespace Restaurant.API.Tests
         // Reservatie Tests
 
         [Fact]
-        public void AddReservatie_ValidInput_ReturnsCreatedAtAction()
+        public void AddReservatie_Test()
         {
             // Arrange
             var klantenNr = 1;
@@ -178,7 +178,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetAllReservaties_ReturnsOk()
+        public void GetAllReservaties_Test()
         {
             // Arrange
             var klantenNr = 1;
@@ -204,7 +204,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void UpdateReservatie_ValidInput_ReturnsOk()
+        public void UpdateReservatie_Test()
         {
             // Arrange
             var klantenNr = 1;
@@ -223,7 +223,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void DeleteReservatie_ExistingReservatie_ReturnsOk()
+        public void DeleteReservatie_ReservatieBestaat_Test()
         {
             // Arrange
             var klantenNr = 1;
@@ -239,7 +239,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void DeleteReservatie_NonExistingReservatie_ReturnsNotFound()
+        public void DeleteReservatie_ReservatieBestaatNiet_Test()
         {
             // Arrange
             var klantenNr = 1;
@@ -257,7 +257,7 @@ namespace Restaurant.API.Tests
         // Restaurant Tests
 
         [Fact]
-        public void GetRestaurantByNaam_ReturnsOk()
+        public void GetRestaurantByNaam_RestaurantBestaat_Test()
         {
             // Arrange
             var restaurantNaam = "Le Comptoir";
@@ -276,7 +276,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetRestaurantByNaam_ReturnsNotFound()
+        public void GetRestaurantByNaam_RestaurantBestaatNiet_Test()
         {
             // Arrange
             var restaurantNaam = "NonExistentRestaurant";
@@ -291,7 +291,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetRestaurantByPostcodeOrKeuken_ReturnsOk()
+        public void GetRestaurantByPostcodeOrKeuken_RestaurantBestaat_Test()
         {
             // Arrange
             var postcode = "9770";
@@ -313,7 +313,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetRestaurantByPostcodeOrKeuken_ReturnsNotFound()
+        public void GetRestaurantByPostcodeOrKeuken_RestaurantBestaatNiet_Test()
         {
             // Arrange
             var postcode = "5678";
@@ -329,7 +329,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetAllRestaurants_ReturnsOk()
+        public void GetAllRestaurants_RestaurantBestaat_Test()
         {
             // Arrange
             BL.Models.Restaurant restaurant1 = new BL.Models.Restaurant("Pasta Piccaso", new Locatie("9000", "Oudenaarde", "Nederstraat", "50"), "italiaans", new Contactgegevens("0487472075", "pasta-piccaso@info.be"), true);
@@ -347,7 +347,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetAllRestaurants_ReturnsNotFound()
+        public void GetAllRestaurants_RestaurantBestaatNiet_Test()
         {
             // Arrange
             _restaurantRepo.Setup(r => r.GetAllRestaurants()).Returns(new List<BL.Models.Restaurant>());
@@ -360,7 +360,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetAvailableRestaurants_ReturnsOk()
+        public void GetAvailableRestaurants_RestaurantBestaat_Test()
         {
             // Arrange
             var datum = DateTime.Now.AddDays(7);
@@ -380,7 +380,7 @@ namespace Restaurant.API.Tests
         }
 
         [Fact]
-        public void GetAvailableRestaurants_ReturnsBadRequest()
+        public void GetAvailableRestaurants_RestaurantBestaatNiet_Test()
         {
             // Arrange
             var datum = DateTime.Now.AddDays(-1);
